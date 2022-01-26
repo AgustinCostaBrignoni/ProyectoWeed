@@ -1,0 +1,1686 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+/* COntenedor grid */
+
+.contenedorGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+                         "main"
+                         "section"
+                         "footer";
+                           
+                           
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+/* Menú de navegación */
+
+
+.navegacion {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    background-color:#d4dbd7;
+    z-index: 1;
+    box-shadow: 5px 1px 5px 1px black;
+    
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    text-decoration-style: none;
+    color:#762F58;
+    font-size: 59px;
+}
+
+.navegacion ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    list-style: none;
+    width: 500px;
+}
+
+.menu > li{
+    position: relative;
+    font-weight: 400;
+    margin: 1%;
+}
+
+.menu li:hover {
+    color: #d4dbd7;
+}
+
+.menu a:hover {
+    background-color: #762F58;
+    color: #d4dbd7;
+    transition: 1s;
+} 
+
+.menu > li > a {
+    justify-content: space-around;
+    color: #762F58;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+    
+.menu li ul{
+    position: absolute;
+    display: flex;
+    max-width: 120%;
+    max-height: 250%;
+    flex-direction: column;
+    display: none;
+}
+
+
+
+.subMenu li a {
+    display: flex;
+    display: block;
+    color: #d4dbd7;
+    font-size: 19px;
+    text-decoration: none;
+}
+    
+    
+    
+
+.menu li:hover ul {
+    background-color: #762F58;
+    display: block;
+    display: flex;
+    align-items: start;
+}
+
+/* IMG CARRITO en  MENU  */
+
+
+.imgCarrito {
+    width: 30%;
+    padding-top: 10%;
+}
+
+.imgCarrito:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+/* Sección de imagen en el MAIN con texto integrado */
+
+main {
+    padding-top: 4%;
+}
+
+/* ICONO DESPLEGABLE EN IMAGEN DEL MAIN */
+
+
+.iconoDesplegable {
+    position: absolute;
+    border: 1px solid #BAE3C7;
+    border-radius: 3px 10px;
+    top: 85%;
+    left: 50%;
+}
+
+.iconoDesplegable li {
+    margin: 1%;
+    padding-left: 1em;
+    width: auto;
+}
+
+.iconoDesplegable:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+
+/* SECCIÓN DE IMAGENES en el <section> */
+
+
+.section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.parrafoSection {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    font-style: italic;
+    font-size: 60px;
+    margin: 1% 7%;
+    text-shadow: 0px 20px 10px 10px black;
+}
+
+.cuadros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+
+.cuadros img {
+    width: 70%;
+    border: 1px solid #762F58;
+}
+
+.cuadros h6 {
+    font-size: 28px;
+}
+
+
+
+.cuadros div {
+    text-align: center;
+    width: fit-content;
+    width: 90%;
+}
+
+/* Letras Desplegables de galería */
+
+.iconoDes{
+    border-radius: 3px 10px;
+    
+}
+
+.iconoDes:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+/* FOOTER */
+/* FOOTER SOCIOS */
+
+footer{
+    width: 100%;
+}
+
+.socios {
+    display: flex;
+    width: 100%;
+    padding-bottom: 30px;
+    flex-direction: column;
+    background-color: rgb(29, 29, 29);
+}
+
+.socios h5 {
+    color: whitesmoke;
+    padding-bottom: 1%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagesSocios {
+    width: 97%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* FOOTER DERECHOS RESERVADOS REDES Y CONTACTO */
+
+.footerDiv {
+    display: flex;
+    display: row;
+    padding: 25px 0px 10px 0px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+}
+
+.logosRedes img {
+    width: 15%;
+    box-shadow: 1px 1px 1px rgb(2, 2, 2);
+}
+
+.derechos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(136, 136, 136);
+    font-size: 20px;
+}
+
+.footContact {
+    color: white;
+
+}
+
+  
+/* ****************************************************************************** NOSOTROS ************************************************************************************************ */
+
+.contenedorGridNosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+                           
+                           
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#main-quienes-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.bloqueMainNosotros {
+    width: 100%;
+    height: 100px;
+    box-shadow: 1px 1px 2px 0px black;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bloqueMainNosotros h2 {
+    padding-top: 20px;
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 100;
+    text-shadow: 0px 20px 10px 10px black;
+    justify-content: center;
+    
+}
+
+
+
+.recuadroPadreUno {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.recuadroPadreDos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+/* Recuadro texto 1 */
+.recuadroTexto {
+    background-color: rgb(255, 248, 236) ;
+    border: 0.5px solid rgb(155, 155, 155);
+    width: 30%;
+    height: auto;
+    padding: 10px 55px 10px 55px;
+    box-shadow: 1px 1px 5px 0px;
+    text-align: center;
+    font-size: 148%;
+    line-height: 105%;
+    font-style: normal;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.recuadroTexto h2{
+    font-size: 130%;
+}
+
+.recuadroTexto h2:hover {
+    transform: scale(1.02);
+    color: #64294c;
+    transition: 0.2s;
+    
+}
+
+/*Recuadro texto 2 */
+
+.recuadroTextoDos {
+    background-color: rgb(255, 248, 236) ;
+    border: 0.5px solid rgb(155, 155, 155);
+    width: 30%;
+    height: auto;
+    padding: 10px 55px 10px 55px;
+    box-shadow: 1px 1px 5px 0px;
+    text-align: center;
+    font-size: 148%;
+    line-height: 105%;
+    font-style: normal;
+    margin-top: 6%;
+     
+
+}
+
+.recuadroTextoDos h2{
+    flex-wrap: wrap;
+    font-size: 130%; 
+}
+
+.recuadroTextoDos h2:hover {
+    transform: scale(1.02);
+    color: #64294c;
+    transition: 0.2s;
+    
+}
+
+/* IMG 1 modificacion */
+
+ 
+#imagen-uno {
+    width: auto;
+    position: relative;
+    z-index: -1;
+    left: 15%;
+    top: 35%;
+    
+} 
+
+#imagen-dos {
+    width: auto;
+    position: relative;
+    z-index: -1;
+    top: 35%;
+    left: 5%;
+}
+
+/* ************************************************************************* PRODUCTOS ***************************************************************** */
+/* ***********************Header************************ */
+
+.contenedorGridProductos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+                         "main"
+                         "section"
+                         "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* ***********************MAIN///////////////////////  */
+.sectionProd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.parrafoSectionProd {
+    width: 90%;
+    font-style: italic;
+    font-size: 60px;
+    margin: 30px 50px;
+    text-shadow: 0px 20px 10px 10px black;
+}
+
+.recuadroBlanco{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 60%;
+    height: 1%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 6px 0px black;
+}
+
+.envioSeguridad{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.envioSeguridad > p{
+    padding-top: 34px;
+    font-style: italic;
+    color: rgb(61, 61, 61);
+}
+
+.envioSeguridad > img{
+    padding-right: 10px;
+}
+
+/* **********SECTION********************* */
+
+.sectionProductos{
+    width: 100%;
+    height: auto;
+}
+
+.iconosTienda{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.iconosTienda > a > img{
+    box-shadow: 2px 2px 4px 0px black;
+}
+
+.iconosTienda > a > img:hover{
+    transform: scale(1.1);
+    transition: calc(0.3s);
+}
+
+.lineaExterna{
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(63, 63, 63);
+    margin: 5px 2px 5px 2px;
+}
+
+.productosTienda{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    gap: 5%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* IMAGENES */
+
+.imagenProd{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 2rem;
+}
+
+.imgProducto{
+    box-shadow: 3px 3px 5px 0px;
+}
+
+.imgAgregarCarrito{
+    width: 15%;
+}
+
+.imgAgregarCarrito:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.addCarro{
+    font-size: 1rem;
+    color: rgb(156, 39, 88);
+}
+
+
+.flecha{
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding-right: 90%;
+    padding-top: 7%;
+    color: #64294c;
+}
+
+/* ***********************************************COMUNIDAD *********************************************** */
+
+.contenedorGridComunidad{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+                         "main"
+                         "section"
+                         "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+section{
+    grid-area: section;
+}
+
+
+footer{
+    grid-area: footer;
+}
+
+.parrafoSectionComu {
+    width: 90%;
+    font-style: italic;
+    font-size: 40px;
+    margin: 30px 50px;
+    text-shadow: 0px 20px 10px 10px black;
+}
+
+#informacion{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+/* *********************************Noticias***************************** */
+.noticiasComunidad{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloSeccion h2{
+    font-weight: 400;
+    font-size: 45px;
+    margin-left: 1%;
+    text-align: center;
+}
+
+.cannabisExporta{
+    background: rgb(199, 197, 197);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+
+}
+
+.cannabisExporta img{
+    width: 20rem;
+    height: 15rem;
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+
+.cannabisExporta h3{
+    color: rgb(66, 66, 66);
+    font-size: 160%;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+.cannabisExporta p{
+    text-align: center;
+    padding: 10px 30px 0px 30px;
+    font-size: 100%;
+}
+
+    
+
+
+
+
+/* ********************************************Informacion***************************************** */
+
+.informacionComunidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacionComunidad h2{
+    text-align: center;
+}
+
+.tabla{
+    background: rgb(199, 197, 197);
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+
+}
+
+.tabla h3{
+    font-size: 35px;
+    margin-left: 1%;
+    
+}
+
+.tabla p{
+    padding-top: 20px;
+}
+
+.colorCuadroTabla{
+    background-color: #762F58;
+    font-style: italic;
+    color: white;
+}
+
+.tabla table{
+    background-color: white;
+    border-color: #762F58;
+}
+
+/* ************************************Videos*********************************** */
+.videoTexto {
+    background-color: rgb(199, 197, 197) ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.videoTexto h6{
+    width: auto;
+    font-size: 25px;
+}
+
+
+/* **************************************Contacto********************************** */
+
+/* COntenedor grid */
+
+.contenedorGridContacto{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+                           
+                           
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* **************************************Formulario********************************* */
+
+.redesContacto h2 {
+    margin-top: 2%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario label{
+    font-size: 16px;
+    font-weight: 900;
+    color: #762F58;
+}
+
+.submit{
+    width: 100px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 2px 0px rgb(2, 2, 2);
+}
+
+.typeRadio{
+    margin-top: 10px;
+}
+
+/* FOOTER SECCION */
+
+.footerDivIndex{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    background-color: rgb(37, 37, 37);
+
+}
+
+.redesContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+    font-size: 20px;
+    gap: 15px;
+    display: flex;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.logosRedes{
+    display: none;
+}
+
+.btn-wsp{
+    position: fixed;
+    width: 50px;
+    height: 52px;
+    line-height: 70px;
+    bottom: 8px;
+    right: 15px;
+    background-image: url(../images/whatsapp.png);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    transform: scale(0.9);
+    transition: calc(0.5s);
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 601px) and (max-width: 1200px){
+    .navegacion{
+        display: none;
+    }
+
+    .tituloResponsive{
+        display: grid;
+        grid-template-areas: "titUno titDos";
+        grid-template-columns: 1.5fr 1fr;
+        background-color: #d4dbd7;
+    }
+
+    .titUno{
+        grid-area: titUno;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .titDos{
+        grid-area: titDos;
+        justify-self: end;
+        align-self: center;  
+        width: 50%;
+        
+    }
+
+    /*  SECCION MAIN */
+
+    main {
+        padding: 0%;
+    }
+    .contenedorResponsive{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("../images/fondoMain.jpg");
+    }
+
+    .iconoDesplegable{
+        display: none;
+    }
+    
+
+    
+    .contenedor {
+        display: none;
+    }
+
+    .titDos{
+        grid-area: titDos;
+        justify-self: end;
+        align-self: center;  
+        width: 45%;
+        margin-bottom: 2%;
+        
+    }
+
+    /* SECCION FOOOTER */
+    .logosRedes{
+        display: none;
+    }
+
+    .btn-wsp{
+        display: none;
+    }
+
+    .logosRedesResponsiveDesktop{
+        display: none;
+    }
+
+    .derechos{
+        padding: 0% 2%;
+        text-align: center;
+    }
+
+    /* Contacto */
+    
+    .footerDiv{
+        display: flex;
+        flex-direction: column;   
+    }
+    .btn-wsp{
+        display: none;
+    }
+    
+    .logosRedes{
+        display: none;
+    }
+    
+    .logosRedesResponsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 5%;
+        gap: 5%;
+    }
+
+    /* **************************   NOSOTROS *-********************/
+
+    .recuadroPadreUno{
+        justify-content: center;
+    }
+
+    .recuadroTexto {
+        background-color: rgb(255, 248, 236) ;
+        border: 0.5px solid rgb(155, 155, 155);
+        width: 100%;
+        height: 100%;
+        padding: 10px 55px 10px 55px;
+        box-shadow: 1px 1px 5px 0px;
+        text-align: center;
+        font-size: 148%;
+        line-height: 105%;
+        font-style: normal;
+        margin-right: 10%;
+    }
+
+    .recuadroTextoDos {
+        background-color: rgb(255, 248, 236) ;
+        border: 0.5px solid rgb(155, 155, 155);
+        width: 50%;
+        height: auto;
+        padding: 10px 55px 10px 55px;
+        box-shadow: 1px 1px 5px 0px;
+        text-align: center;
+        font-size: 148%;
+        line-height: 105%;
+        font-style: normal;
+        margin-top: 4%;
+    }
+
+    #imagen-uno{
+        display: none;
+    }
+
+    #imagen-dos{
+        display: none;
+    }
+
+    /****************************************** PRODUCTOS */
+    
+    .recuadroBlanco{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 96%;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 6px 0px black;
+    }
+    
+    .envioSeguridad{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10%;
+        margin-left: 3%;
+    }
+    
+    .envioSeguridad > p{
+        width: 100%;
+        padding-top: 34px;
+        font-style: italic;
+        color: rgb(61, 61, 61);
+    }
+    /* Iconos tienda CANNABIS ACEITES SEMILLAS */
+    .iconosTienda{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 0.8%;
+    }
+    
+    .iconosTienda img{
+        width: 97%;
+    }
+
+    /************************************* COMUNIDAD */
+
+    .cannabisExporta{
+        background: rgb(199, 197, 197);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+    
+    }
+    
+    .cannabisExporta img{
+        width: 20rem;
+        height: 15rem;
+        align-self: center;
+        padding-left: 1%;
+        padding-bottom: 2%;
+    }
+    
+    .cannabisExporta h3{
+        color: rgb(66, 66, 66);
+        font-size: 160%;
+        text-decoration-line: underline;
+        text-align: center;
+    }
+    
+    .cannabisExporta p{
+        text-align: center;
+        padding: 10px 30px 0px 30px;
+        font-size: 100%;
+    }
+
+    .videoTexto{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+
+    
+@media  (min-width: 480px) and (max-width: 600px ){
+    .navegacion{ 
+        display: none;
+    }
+    .contenedor{
+        display: none;
+    }
+    .parrafoSection{
+        font-size: 2rem;
+    }
+    .footerDiv{
+        flex-direction: column;
+        
+        
+    }
+    .derechos{
+        text-align: center;
+        padding: 0% 2%;
+        text-align: center;
+    }
+    .logosRedes{
+        display: none;
+    }
+    /* TITULO RESPONSIVO */
+    .logosRedesResponsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 5%;
+        gap: 5%;
+    }
+    
+
+    .tituloResponsive{
+        display: grid;
+        grid-template-areas: "titUno titDos";
+        grid-template-columns: 1.5fr 1fr;
+        background-color: #d4dbd7;
+    }
+
+    .titUno{
+        grid-area: titUno;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .titDos{
+        grid-area: titDos;
+        justify-self: end;
+        align-self: center;  
+        width: 50%;
+        
+    }
+
+    /* SECCION MAIN */
+
+    main {
+        padding: 0%;
+    }
+    .contenedorResponsive{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("../images/fondoMain.jpg");
+    }
+
+    .iconoDesplegable{
+        display: none;
+    }
+
+    .btn-wsp{
+        display: none;
+    }
+
+    /* FOoter */
+    
+    .logosRedesResponsiveDesktop{
+        display: none;
+    }
+
+    /****************************** Contacto ************************/
+    /* Redes Contacto */
+
+    .redesContacto h2{
+        font-size: 35px;
+        text-align: center;
+        padding: 2%;
+    }
+
+    /* formulario */
+
+    .formulario{
+        padding: 3%;
+    }
+
+    .footerDivIndex{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        background-color: rgb(37, 37, 37);
+    
+    }
+
+    .footerDiv{
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .btn-wsp{
+        display: none;
+    }
+    
+    .logosRedes{
+        display: none;
+    }
+    
+    .logosRedesResponsive{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+        gap: 5%;
+    }
+
+    .logosRedesResponsiveDesktop{
+        display: none;
+    }
+
+    /* **************************   NOSOTROS *-********************/
+
+    .recuadroPadreUno{
+        justify-content: center;
+    }
+
+    .recuadroTexto {
+        background-color: rgb(255, 248, 236) ;
+        border: 0.5px solid rgb(155, 155, 155);
+        width: 100%;
+        height: 100%;
+        padding: 10px 55px 10px 55px;
+        box-shadow: 1px 1px 5px 0px;
+        text-align: center;
+        font-size: 148%;
+        line-height: 105%;
+        font-style: normal;
+        margin-right: 10%;
+    }
+
+    .recuadroTextoDos {
+        background-color: rgb(255, 248, 236) ;
+        border: 0.5px solid rgb(155, 155, 155);
+        width: 60%;
+        height: auto;
+        padding: 10px 55px 10px 55px;
+        box-shadow: 1px 1px 5px 0px;
+        text-align: center;
+        font-size: 148%;
+        line-height: 105%;
+        font-style: normal;
+        margin-top: 4%;
+    }
+
+    #imagen-uno{
+        display: none;
+    }
+
+    #imagen-dos{
+        display: none;
+    }
+
+    /****************************************** PRODUCTOS */
+     
+    .parrafoSectionProd{
+        font-size: 2rem;
+    }   
+
+
+    .recuadroBlanco{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white;
+        width: 30%;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 6px 0px black;
+    }
+    
+    .envioSeguridad{
+        width: 71%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 1%;
+    }
+
+    
+    .envioSeguridad > p{
+        width: 100%;
+        padding-top: 1%;
+        margin-left: 21%;
+        text-align: start;
+        font-style: italic;
+        color: rgb(61, 61, 61);
+    }
+    /* Iconos tienda CANNABIS ACEITES SEMILLAS */
+
+    .iconosTienda{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 3%;
+    }
+    
+    .iconosTienda img{
+        width: 90%;
+    }
+
+    /* imagenes productos */
+
+    .imgProducto{
+       margin-left: 2% ;
+    }
+
+    /************************************* COMUNIDAD */
+
+    .parrafoSectionComu{
+        font-size: 2rem;
+    }
+
+    .cannabisExporta{
+        background: rgb(199, 197, 197);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+    
+    }
+    
+    .cannabisExporta img{
+        width: 20rem;
+        height: 15rem;
+        align-self: center;
+        padding-left: 1%;
+        padding-bottom: 2%;
+    }
+    
+    .cannabisExporta h3{
+        color: rgb(66, 66, 66);
+        font-size: 160%;
+        text-decoration-line: underline;
+        text-align: center;
+    }
+    
+    .cannabisExporta p{
+        text-align: center;
+        padding: 10px 30px 0px 30px;
+        font-size: 100%;
+    }
+
+    .tabla{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 1%;
+    }
+
+    .videoTexto{
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .videoTexto div{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .videoTexto iframe{
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+@media  (min-width: 320px) and (max-width: 480px ){
+    
+    .contenedorGrid{
+        width: auto ;
+    }
+
+    .navegacion{ 
+        display: none;
+    }
+    .contenedor{
+        display: none;
+    }
+    .parrafoSection{
+        font-size: 2rem;
+    }
+    
+    .logosRedes img{
+        margin-left: 23%;
+    }
+
+    /* Titulo responsive */
+
+    .tituloResponsive{
+        display: grid;
+        grid-template-areas: "titUno titDos";
+        grid-template-columns: 1.5fr 1fr;
+        background-color: #d4dbd7;
+    }
+
+    .titUno{
+        grid-area: titUno;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .titDos{
+        grid-area: titDos;
+        justify-self: end;
+        align-self: center;  
+        width: 50%;
+        
+    }
+
+    main{
+        padding-top: 0;
+    }
+    .contenedorResponsive{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("../images/fondoMain.jpg");
+    }
+
+    .iconoDesplegable{
+        display: none;
+    }
+
+    /* FOOTER SOCIOS */
+
+
+    .imagesSocios{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 4%;
+    }
+    
+    .imagesSocios img{
+        justify-self: center;
+    }
+
+    /* FOOTER */
+    /* LOGOS REDES Y DERECHOS RESERVADOS  */
+
+    .footerDiv{
+        flex-direction: column;
+        
+        
+    }
+    .derechos{
+        text-align: center;
+    }
+
+    .footerDivIndex{
+        display: flex;
+        flex-direction: column;   
+    }
+    .btn-wsp{
+        display: none;
+    }
+    
+    .logosRedes{
+        display: none;
+    }
+    
+    .logosRedesResponsive{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+        gap: 5%;
+    }
+
+    .logosRedesResponsiveDesktop{
+        display: none;
+    }
+
+    /****************************** Contacto ************************/
+    /* Redes Contacto */
+
+    .redesContacto h2{
+        font-size: 35px;
+        text-align: center;
+        padding: 2%;
+    }
+
+    /* Formulario */
+    .formulario{
+        padding: 3%;
+    }
+
+    /* **************************   NOSOTROS *-********************/
+
+    .bloqueMainNosotros h2{
+        font-size: 2.5rem;
+    }
+
+    .recuadroPadreUno{
+        justify-content: center;
+    }
+
+    .recuadroTexto {
+        background-color: rgb(255, 248, 236) ;
+        border: 0.5px solid rgb(155, 155, 155);
+        width: 95%;
+        height: 100%;
+        padding: 10px 55px 10px 55px;
+        box-shadow: 1px 1px 5px 0px;
+        text-align: center;
+        font-size: 148%;
+        line-height: 105%;
+        font-style: normal;
+        margin-right: 10%;
+    }
+
+    .recuadroTextoDos {
+        background-color: rgb(255, 248, 236) ;
+        border: 0.5px solid rgb(155, 155, 155);
+        width: 95%;
+        height: auto;
+        padding: 10px 55px 10px 55px;
+        box-shadow: 1px 1px 5px 0px;
+        text-align: center;
+        font-size: 148%;
+        line-height: 105%;
+        font-style: normal;
+        margin-top: 10%;
+    }
+
+    #imagen-uno{
+        display: none;
+    }
+
+    #imagen-dos{
+        display: none;
+    }
+
+    
+    /****************************************** PRODUCTOS */
+    
+    .parrafoSectionProd{
+        font-size: 2rem;
+    }   
+
+
+      .recuadroBlanco{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white;
+        width: 47%;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 6px 0px black;
+    }
+    
+    .envioSeguridad{
+        width: 71%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 1%;
+    }
+
+    
+    .envioSeguridad > p{
+        width: 100%;
+        padding-top: 1%;
+        margin-left: 21%;
+        text-align: start;
+        font-style: italic;
+        color: rgb(61, 61, 61);
+    }
+    /* Iconos tienda CANNABIS ACEITES SEMILLAS */
+
+    .iconosTienda{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 3%;
+    }
+    
+    .iconosTienda img{
+        width: 90%;
+    }
+
+    /* imagenes productos */
+
+    .imgProducto{
+        width: 80%;
+    }
+    
+    .imagenProd p{
+        font-size: 75%;
+    }
+    
+    /************************************* COMUNIDAD */
+
+    .parrafoSectionComu{
+        font-size: 1.5rem;
+    }
+    .tituloSeccion h2{
+        font-size: 2rem;
+    }
+    .cannabisExporta{
+        background: rgb(199, 197, 197);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+    
+    }
+    
+    .cannabisExporta img{
+        width: 20rem;
+        height: 15rem;
+        align-self: center;
+        padding-left: 1%;
+        padding-bottom: 2%;
+    }
+    
+    .cannabisExporta h3{
+        color: rgb(66, 66, 66);
+        font-size: 160%;
+        text-decoration-line: underline;
+        text-align: center;
+    }
+    
+    .cannabisExporta p{
+        text-align: center;
+        padding: 10px 30px 0px 30px;
+        font-size: 100%;
+    }
+
+    .tabla{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 1%;
+    }
+
+    .videoTexto{
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .videoTexto div{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .videoTexto iframe{
+        width: 100%;
+        padding: 5%;
+    }
+    
+
+}
+
+@media  (min-width: 1201px ){
+    /* Header */
+
+    .desplegable{
+        display: none;
+    }
+
+    .tituloResponsive{
+        display: none;
+    }
+
+    /* Main */
+
+
+    .contenedorResponsive{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+    }
+
+    .contenedorResponsive img{
+        width: 100%;
+        
+
+        
+    }
+
+
+    /* ICONODESPLEGABLE */
+
+    .iconoDesplegable {
+        width: auto;
+        position: absolute;
+        border: 1px solid #BAE3C7;
+        border-radius: 3px 10px;
+        top: 41%;
+        left: 93%;
+    }
+    
+    .iconoDesplegable li {
+        margin: 1%;
+        padding-left: 1em;
+        width: auto;
+    }
+    
+    .iconoDesplegable:hover {
+        transform: scale(1.2);
+        transition: transform 0.2s;
+    }
+
+
+    /* FOOTER */
+
+    .logosRedesResponsive{
+        display: none;
+    }
+
+    .logosRedesResponsiveDesktop{
+        padding-top: 40%;
+    }
+
+    /*********************************************** Footer Contacto *****************************/
+
+    .derechos{
+        text-align: center;
+        padding: 0% 2%;
+    }
+}
+
