@@ -196,6 +196,11 @@ main {
     border: 1px solid #762F58;
 }
 
+.cuadros img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
 .cuadros h6 {
     font-size: 28px;
 }
@@ -212,12 +217,7 @@ main {
 
 .iconoDes{
     border-radius: 3px 10px;
-    
-}
-
-.iconoDes:hover {
-    transform: scale(1.2);
-    transition: transform 0.2s;
+    padding-top: 3%
 }
 
 /* FOOTER */
