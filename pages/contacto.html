@@ -17,60 +17,65 @@
 <body>
     <div class="contenedorGridContacto">
         <header>
-            <div class="tituloResponsive">
-                <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
-            </div>
-            <!-- MENU DESPLEGABLE -->
-            <div class="desplegable">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                    <!-- <h5 class="text-white h4">Collapsed content</h5>
-                    <span class="text-muted">Toggleable via the navbar brand.</span> -->
+            <div class="container-fluid">
+                <div class="col tituloResponsive">
+                    <div class="titUno">
+                        <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
+                    </div>
+                    <div class="titDos">
+                        <a href="../pages/productos.html">
+                            <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
+                    </div>
+                </div>
+                <!-- MENU DESPLEGABLE -->
+                <div class="col desplegable">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-dark p-4">
+                        <ul class="menu">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                            <li><a href="../pages/productos.html">Productos</a></li>
+                            <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
+                            <li><a href="../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                    </nav>
+                </div> 
+                <nav class="col navegacion">
+                    <h2 id="weedKings"><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
                     <ul class="menu">
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="../pages/nosotros.html">Nosotros</a></li>
                         <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
+                        <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
+                            <ul class="subMenu">
+                                <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
+                                <li><a href="../pages/comunidad.html#informacion">Información</a></li>
+                                <li><a href="../pages/comunidad.html#videos">Videos</a></li>
+                            </ul>
+                        </li>
                         <li><a href="../pages/contacto.html">Contacto</a></li>
                     </ul>
-                    </div>
-                </div>
-                <nav class="navbar navbar-dark bg-dark">
-                    <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div>
+                        <a href="../pages/productos.html">
+                            <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras"
+                                title="Ir al carrito"></a>
                     </div>
                 </nav>
-            </div> 
-            <nav class="navegacion">
-                <h2><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
-                        <ul class="subMenu">
-                            <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
-                            <li><a href="../pages/comunidad.html#informacion">Información</a></li>
-                            <li><a href="../pages/comunidad.html#videos">Videos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-                <div>
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras"
-                            title="Ir al carrito"></a>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </header>  
 
 
         <main>
-            <div class="redesContacto">
+            <div class="container-fluid redesContacto">
                 <h2>Puedes contactarnos por:</h2>
-                <!-- <img src="../images/wsp.png" alt="Foto wathsapp"> +598 954 080 91 -->
                 <a href="https://www.instagram.com/?hl=es-la" target="_blank"> <img src="../images/instagram.png" alt="Foto Instagram"></a> www.instagram.com/WeedKings
                 <a href="https://www.facebook.com/" target="_blank"> <img src="../images/facebook.png" alt="Foto Facebook"></a> www.facebook.com/WeedKings
             </div>  
@@ -80,7 +85,7 @@
             
 
             <form>
-                <fieldset class="formulario">
+                <fieldset class="container-fluid p-2 formulario">
                     <legend> Formulario de contacto</legend>
                     <div>
                         <label for="nombre">Escribe tu nombre </label>
@@ -134,7 +139,7 @@
             <div>
                 <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
             </div>
-            <div class="socios">
+            <div class="container-fluid socios">
                 <div>
                     <h5>Socios principales:</h5>
                 </div>
@@ -145,7 +150,7 @@
                     <img src="../images/logo4.png" alt="">
                 </div>
             </div>
-            <div class="footerDiv">
+            <div class="container-fluid p-4 footerDiv">
                 <div class="logosRedesResponsive">
                     <a href="https://api.whatsapp.com/send?phone=+59895408091" target="_blank"><img src="../images/whatsapp.png"
                             alt="Wathsapp"></a>

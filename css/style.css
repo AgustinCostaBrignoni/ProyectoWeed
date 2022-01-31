@@ -5,6 +5,19 @@
 
 }
 
+/* BOOTSTRAP LAYOUT */
+
+.container-fluid{
+    padding: 0%;
+}
+
+.rowMain{
+    width: 100%;
+}
+
+.rowHeader{
+    width: 100%;
+}
 
 /* COntenedor grid */
 
@@ -777,7 +790,7 @@ footer{
 
 .footerDivIndex{
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 5% 90%;
     background-color: rgb(37, 37, 37);
 
 }
@@ -1674,7 +1687,7 @@ footer{
     }
 
     .logosRedesResponsiveDesktop{
-        padding-top: 40%;
+        width: 50%;
     }
 
     /*********************************************** Footer Contacto *****************************/

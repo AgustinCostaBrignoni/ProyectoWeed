@@ -13,81 +13,85 @@
     <title>Inicio-WeedKings</title>
 </head>
 <body>
+    <!-- APLICANDO LAYOUT BOOTSTRAP -->
     <div class="contenedorGridNosotros">
         <header>
-            <div class="tituloResponsive">
-                <div class="titUno">
-                    <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
+            <div class="container-fluid">
+                <div class="col tituloResponsive">
+                    <div class="titUno">
+                        <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
+                    </div>
+                    <div class="titDos">
+                        <a href="../pages/productos.html">
+                            <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
+                    </div>
                 </div>
-                <div class="titDos">
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
-                </div>
-            </div>
-            <!-- MENU DESPLEGABLE -->
-            <div class="desplegable">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                    <!-- <h5 class="text-white h4">Collapsed content</h5>
-                    <span class="text-muted">Toggleable via the navbar brand.</span> -->
+                <!-- MENU DESPLEGABLE -->
+                <div class="col desplegable">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-dark p-4">
+                        <ul class="menu">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                            <li><a href="../pages/productos.html">Productos</a></li>
+                            <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
+                            <li><a href="../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                    </nav>
+                </div> 
+                <nav class="col navegacion">
+                    <h2 id="weedKings"><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
                     <ul class="menu">
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="../pages/nosotros.html">Nosotros</a></li>
                         <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
+                        <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
+                            <ul class="subMenu">
+                                <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
+                                <li><a href="../pages/comunidad.html#informacion">Información</a></li>
+                                <li><a href="../pages/comunidad.html#videos">Videos</a></li>
+                            </ul>
+                        </li>
                         <li><a href="../pages/contacto.html">Contacto</a></li>
                     </ul>
-                    </div>
-                </div>
-                <nav class="navbar navbar-dark bg-dark">
-                    <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div>
+                        <a href="../pages/productos.html">
+                            <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras"
+                                title="Ir al carrito"></a>
                     </div>
                 </nav>
-            </div> 
-            <nav class="navegacion">
-                <h2><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
-                        <ul class="subMenu">
-                            <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
-                            <li><a href="../pages/comunidad.html#informacion">Información</a></li>
-                            <li><a href="../pages/comunidad.html#videos">Videos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-                <div>
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </header>  
 
         <main id="main-quienes-somos">
-            <div class="bloqueMainNosotros">
-                <h2 class="quienesSomos">¿Quienes somos?</h2>
-            </div>
-            <div class="recuadroPadreUno">
-                <div id="imagen-uno">
-                    <img src="../images/justherb.png" alt="">
+            <div class="container-fluid">
+                <div class="bloqueMainNosotros">
+                    <h2 class="quienesSomos">¿Quienes somos?</h2>
                 </div>
-                <div class="recuadroTexto">
-                    <h2>WeedKings es una empresa dedicada al cultivo de marihuana y sus productos derivados, comercializamos a nivel internacional la mejor selección de variedades de marihuana, propias y de otros bancos. Desde nuestros orígenes como cultivadores, hemos investigado en la genética de las plantas hasta conseguir nuestras semillas de marihuana, apreciadas en el mundo entero.</h2>            
-                </div>   
-            </div>
-            <div class="recuadroPadreDos">
-                <div id="imagen-dos">
-                    <img src="../images/productos.png" alt="">
-                </div> 
-                <div class="recuadroTextoDos">
-                    <h2>Ponemos a tu disposición la <a href="../pages/productos.html" style="text-decoration: none; color:black">tienda oficial WeedKings</a> para ofrecerte un trato directo y sin intermediarios. Siempre garantizamos la seguridad en las transacciones, la privacidad en los envíos y resolvemos cualquier incidencia que pueda surgir.
-                </div> 
+                <div class="recuadroPadreUno d-inline-flex p-5 bd-highlight">
+                    <div id="imagen-uno">
+                        <img src="../images/justherb.png" alt="">
+                    </div>
+                    <div class="recuadroTexto">
+                        <h2>WeedKings es una empresa dedicada al cultivo de marihuana y sus productos derivados, comercializamos a nivel internacional la mejor selección de variedades de marihuana, propias y de otros bancos. Desde nuestros orígenes como cultivadores, hemos investigado en la genética de las plantas hasta conseguir nuestras semillas de marihuana, apreciadas en el mundo entero.</h2>            
+                    </div>   
+                </div>
+                <div class="recuadroPadreDos">
+                    <div id="imagen-dos">
+                        <img src="../images/productos.png" alt="">
+                    </div> 
+                    <div class="recuadroTextoDos">
+                        <h2>Ponemos a tu disposición la <a href="../pages/productos.html" style="text-decoration: none; color:black">tienda oficial WeedKings</a> para ofrecerte un trato directo y sin intermediarios. Siempre garantizamos la seguridad en las transacciones, la privacidad en los envíos y resolvemos cualquier incidencia que pueda surgir.
+                    </div> 
+                </div>
             </div>
         </main>
 
@@ -95,7 +99,7 @@
             <div>
                 <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
             </div>
-            <div class="socios">
+            <div class="container-fluid socios">
                 <div>
                     <h5>Socios principales:</h5>
                 </div>
@@ -106,7 +110,7 @@
                     <img src="../images/logo4.png" alt="">
                 </div>   
             </div>
-            <div class="footerDivIndex">
+            <div class="container-fluid footerDivIndex">
                 <div class="logosRedes">
                     <a href="https://www.facebook.com/" target="_blank"><img src="../images/Facebook.png"
                             alt="Facebook"></a>
@@ -121,7 +125,7 @@
                     <a href="https://api.whatsapp.com/send?phone=+59895408091" target="_blank"><img src="../images/whatsapp.png"
                             alt="Wathsapp"></a>
                 </div>
-                <div class="logosRedesResponsiveDesktop">
+                <div class="row logosRedesResponsiveDesktop">
                     <a href="https://www.facebook.com/" target="_blank"><img src="../images/FacebookResp.png"
                             alt="Facebook"></a>
                     <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/InstagramResp.png"
@@ -150,5 +154,3 @@
     
 </body>
 </html>
-    
-    <div class="contenedorGridNosotros">

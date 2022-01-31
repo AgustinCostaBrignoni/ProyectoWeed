@@ -17,80 +17,83 @@
 <body>
     <div class="contenedorGridProductos">
         <header>
-            <div class="tituloResponsive">
-                <div class="titUno">
-                    <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
+            <div class="container-fluid">
+                <div class="col tituloResponsive">
+                    <div class="titUno">
+                        <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
+                    </div>
+                    <div class="titDos">
+                        <a href="../pages/productos.html">
+                            <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
+                    </div>
                 </div>
-                <div class="titDos">
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
-                </div>
-            </div>
-            <!-- MENU DESPLEGABLE -->
-            <div class="desplegable">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                    <!-- <h5 class="text-white h4">Collapsed content</h5>
-                    <span class="text-muted">Toggleable via the navbar brand.</span> -->
+                <!-- MENU DESPLEGABLE -->
+                <div class="col desplegable">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-dark p-4">
+                        <ul class="menu">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                            <li><a href="../pages/productos.html">Productos</a></li>
+                            <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
+                            <li><a href="../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                    </nav>
+                </div> 
+                <nav class="col navegacion">
+                    <h2 id="weedKings"><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
                     <ul class="menu">
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="../pages/nosotros.html">Nosotros</a></li>
                         <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
+                        <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
+                            <ul class="subMenu">
+                                <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
+                                <li><a href="../pages/comunidad.html#informacion">Información</a></li>
+                                <li><a href="../pages/comunidad.html#videos">Videos</a></li>
+                            </ul>
+                        </li>
                         <li><a href="../pages/contacto.html">Contacto</a></li>
                     </ul>
-                    </div>
-                </div>
-                <nav class="navbar navbar-dark bg-dark">
-                    <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div>
+                        <a href="../pages/productos.html">
+                            <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras"
+                                title="Ir al carrito"></a>
                     </div>
                 </nav>
-            </div> 
-            <nav class="navegacion">
-                <h2><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
-                        <ul class="subMenu">
-                            <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
-                            <li><a href="../pages/comunidad.html#informacion">Información</a></li>
-                            <li><a href="../pages/comunidad.html#videos">Videos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-                <div>
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </header>  
 
         <main>
-            <div class="sectionProd">
-                <div class="parrafoSectionProd">
-                    <p>Aquí te mostramos algunos de nuestros productos, fabricados con la más alta calidad del mercado. </p>
-                </div>
-                <div class="recuadroBlanco">
+            <div class="container-fluid">
+                <div class="sectionProd">
+                    <div class="parrafoSectionProd">
+                        <p>Aquí te mostramos algunos de nuestros productos, fabricados con la más alta calidad del mercado. </p>
+                    </div>
+                    <div class="recuadroBlanco">
 
-                    <div class="envioSeguridad">
-                        <img class="imagenRecuadro" src="../images/iconoEnvio.png" alt="">
-                        <p>ENVÍO RÁPIDO Y GRATUITO</p>
-                        <img class="imagenRecuadro" src="../images/iconoCalidad.png" alt="">
-                        <p>CALIDAD MÁXIMA</p>
-                        <img class="imagenRecuadro" src="../images/iconoSeguridad.png" alt="">
-                        <p>GARANTÍA DE ENTREGA</p>
+                        <div class="envioSeguridad">
+                            <img class="imagenRecuadro" src="../images/iconoEnvio.png" alt="">
+                            <p>ENVÍO RÁPIDO Y GRATUITO</p>
+                            <img class="imagenRecuadro" src="../images/iconoCalidad.png" alt="">
+                            <p>CALIDAD MÁXIMA</p>
+                            <img class="imagenRecuadro" src="../images/iconoSeguridad.png" alt="">
+                            <p>GARANTÍA DE ENTREGA</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>    
         </main>
         <section>
-            <div class="sectionProductos">
+            <div class="container sectionProductos">
                 <div class="lineaExterna">
                     <div>
                         <div class="iconosTienda">
@@ -135,16 +138,11 @@
             </div>
         </section>
                 
-
-                
-            
-
-
         <footer>
             <div>
                 <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
             </div>
-            <div class="socios">
+            <div class="container-fluid socios">
                 <div>
                     <h5>Socios principales:</h5>
                 </div>
@@ -155,7 +153,7 @@
                     <img src="../images/logo4.png" alt="">
                 </div>   
             </div>
-            <div class="footerDivIndex">
+            <div class="container-fluid footerDivIndex">
                 <div class="logosRedes">
                     <a href="https://www.facebook.com/" target="_blank"><img src="../images/Facebook.png"
                             alt="Facebook"></a>
@@ -170,7 +168,7 @@
                     <a href="https://api.whatsapp.com/send?phone=+59895408091" target="_blank"><img src="../images/whatsapp.png"
                             alt="Wathsapp"></a>
                 </div>
-                <div class="logosRedesResponsiveDesktop">
+                <div class="row logosRedesResponsiveDesktop">
                     <a href="https://www.facebook.com/" target="_blank"><img src="../images/FacebookResp.png"
                             alt="Facebook"></a>
                     <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/InstagramResp.png"
@@ -192,7 +190,11 @@
             </div>
 
         </footer>
+        
     </div>    
 </body>
 
 </html>
+                
+            
+
