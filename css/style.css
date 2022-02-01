@@ -846,6 +846,7 @@ footer{
         grid-template-areas: "titUno titDos";
         grid-template-columns: 1.5fr 1fr;
         background-color: #d4dbd7;
+        
     }
 
     .titUno{
