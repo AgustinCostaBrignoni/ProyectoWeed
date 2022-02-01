@@ -19,11 +19,11 @@
         <div class="contenedorGrid">
             <header>
                 <div class="container-fluid">
-                    <div class="tituloResponsive">
-                        <div class="text-center  titUno">
+                    <div class="row mw-100 m-0 tituloResponsive">
+                        <div class="col text-center titUno">
                             <h1><a href="index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
                         </div>
-                        <div class="titDos">
+                        <div class="col titDos">
                             <a href="pages/productos.html">
                                 <img class="imgCarrito" src="images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
                         </div>
@@ -49,7 +49,7 @@
                             </div>
                         </nav>
                     </div> 
-                    <nav class="navegacion">
+                    <nav class="container-fluid navegacion">
                         <h2 id="weedKings"><a href="index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
                         <ul class="menu">
                             <li><a href="index.html">Inicio</a></li>
@@ -68,16 +68,17 @@
                             <a href="pages/productos.html">
                                 <img class="imgCarrito" src="images/carrito.png" alt="CarritoDeCompras"
                                     title="Ir al carrito"></a>
-                        </div>
+                        </div>  
+                        
                     </nav>
                 </div>
             </header>  
         
             <main>
                 <div class="container-fluid">
-                    <div class="contenedorResponsive">
-                        <img src="images/fondoMain.jpg" alt="">
-                        <div class="iconoDesplegable"><a href="#pie" style='text-decoration:none; color:aliceblue'>
+                    <div class="row m-0 contenedorResponsive">
+                        <img class="col m-0 p-0" src="images/fondoMain.jpg" alt="">
+                        <div class="col p-0 iconoDesplegable"><a href="#pie" style='text-decoration:none; color:aliceblue'>
                             <h4 class="vistazo">¡Hecha un vistazo!</h4>
                             <h4 class="clickAqui">¡Click aquí!</h4>
                         </a>
@@ -88,25 +89,25 @@
 
             <section id="pie">
                 <div class="container-fluid section">
-                    <div class="galeriaSection">
-                        <div class="parrafoSection">
+                    <div class="row m-0 p-0 galeriaSection">
+                        <div class="col parrafoSection">
                             <p>Aquí te mostramos algunos de nuestros productos, fabricados con la más alta calidad del
                                 mercado. </p>
                         </div>
-                        <div class="cuadros">
-                            <div class=""><a href="pages/productos.html"><img src="images/aceite.png" alt=""></a>
+                        <div class="container cuadros">
+                            <div class="row"><a class="col-12" href="pages/productos.html"><img src="images/aceite.png" alt=""></a>
                                 <div class="iconoDes">
-                                    <h6>Aceites</h6>
+                                    <h6 class="col-12">Aceites</h6>
                                 </div>
                             </div>
-                            <div><a href="pages/productos.html"><img src="images/semilla.png" alt=""></a>
+                            <div class="row"><a class="col-12" href="pages/productos.html"><img src="images/semilla.png" alt=""></a>
                                 <div class="iconoDes">
-                                    <h6>Semillas</h6>
+                                    <h6 class="col-12">Semillas</h6>
                                 </div>
                             </div>
-                            <div><a href="pages/productos.html"><img src="images/cogollo.png" alt=""></a>
+                            <div class="row"><a class="col-12" href="pages/productos.html"><img src="images/cogollo.png" alt=""></a>
                                 <div class="iconoDes">
-                                    <h6>Cogollo</h6>
+                                    <h6 class="col-12">Cogollo</h6>
                                 </div>
                             </div>
                         </div>
@@ -120,14 +121,16 @@
                     <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
                 </div>
                 <div class="container-fluid socios">
-                    <div>
-                        <h5>Socios principales:</h5>
+                    <div class="row mw-100">
+                        <h5 class="col p-0">Socios principales:</h5>
                     </div>
-                    <div class="imagesSocios">
-                        <img src="images/logo1.png" alt="">
-                        <img src="images/logo2.png" alt="">
-                        <img src="images/logo3.png" alt="">
-                        <img src="images/logo4.png" alt="">
+                    <div class="container-fluid imagesSocios">
+                        <div class="row d-flex justify-content-between">
+                            <img class="col-3" src="images/logo1.png" alt="">
+                            <img class="col-3" src="images/logo2.png" alt="">
+                            <img class="col-3" src="images/logo3.png" alt="">
+                            <img class="col-3" src="images/logo4.png" alt="">
+                        </div>    
                     </div>   
                 </div>
                 <div class="container-fluid footerDivIndex">

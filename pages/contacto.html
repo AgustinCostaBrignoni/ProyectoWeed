@@ -18,11 +18,11 @@
     <div class="contenedorGridContacto">
         <header>
             <div class="container-fluid">
-                <div class="tituloResponsive">
-                    <div class="text-center  titUno">
+                <div class="row mw-100 m-0 tituloResponsive">
+                    <div class="col text-center titUno">
                         <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
                     </div>
-                    <div class="titDos">
+                    <div class="col titDos">
                         <a href="../pages/productos.html">
                             <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
                     </div>
@@ -48,7 +48,7 @@
                         </div>
                     </nav>
                 </div> 
-                <nav class="navegacion">
+                <nav class="container-fluid navegacion">
                     <h2 id="weedKings"><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
                     <ul class="menu">
                         <li><a href="../index.html">Inicio</a></li>
@@ -67,7 +67,8 @@
                         <a href="../pages/productos.html">
                             <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras"
                                 title="Ir al carrito"></a>
-                    </div>
+                    </div>  
+                    
                 </nav>
             </div>
         </header>  
@@ -87,21 +88,21 @@
             <form>
                 <fieldset class="container-fluid p-2 formulario">
                     <legend> Formulario de contacto</legend>
-                    <div>
-                        <label for="nombre">Escribe tu nombre </label>
-                        <input type="text" name="nombre" required placeholder="tu nombre aquí">
+                    <div class="row">
+                        <label class="col-6" for="nombre">Escribe tu nombre </label>
+                        <input class="col-6" type="text" name="nombre" required placeholder="tu nombre aquí">
                     </div>
                     <br>
                     
-                    <div>
-                        <label for="email">Escribe tu email </label>
-                        <input type="email" required placeholder="ej:@gmail">
+                    <div class="row">
+                        <label class="col-6" for="email">Escribe tu email </label>
+                        <input class="col-6" type="email" required placeholder="ej:@gmail">
                     </div>
                     <br>
                     
-                    <div>
-                        <label for="pais">Selecciona tu pais </label>
-                        <select name="pais">
+                    <div class="row">
+                        <label class="col-6" for="pais">Selecciona tu pais </label>
+                        <select class="col-6" name="pais">
                             <option value="uruguay">Uruguay</option>
                             <option value="argentina">Argentina</option>
                             <option value="chile">Chile</option>
@@ -109,27 +110,27 @@
                     </div>
                     <br>
                     
-                    <div>
+                    <div class="container-fluid text-center">
                         <label for="sexo"> Genero: </label><br>
                         <input class="typeRadio" type="radio" name="sexo" value="mujer"> Mujer
                         <input class="typeRadio" type="radio" name="sexo" value="hombre"> Hombre
                         <input class="typeRadio" type="radio" name="sexo" value="otro"> Otro                
                     </div>
                     <br>
-                    <div>
-                        <label for="check">¿Desea recibir últimas noticias?</label>
-                        <input type="checkbox" name="check">
+                    <div class="row">
+                        <label class="col-8" for="check">¿Desea recibir últimas noticias?</label>
+                        <input class="col-4" type="checkbox" name="check">
                     </div>
                     <br>
 
-                    <div>
-                        <textarea name="comentarios" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
+                    <div class="row">
+                        <textarea class="col" name="comentarios" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
                     </div>
                     <br>
                     
-                    <div>
-                        <input class="submit" type="submit" value="Enviar">
-                        <input class="submit" type="reset" value="Resetear">
+                    <div class="row">
+                        <input class="col submit" type="submit" value="Enviar">
+                        <input class="col submit" type="reset" value="Resetear">
                     </div>
                 </fieldset>
             </form>
@@ -140,15 +141,17 @@
                 <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
             </div>
             <div class="container-fluid socios">
-                <div>
-                    <h5>Socios principales:</h5>
+                <div class="row mw-100">
+                    <h5 class="col p-0">Socios principales:</h5>
                 </div>
-                <div class="imagesSocios">
-                    <img src="../images/logo1.png" alt="">
-                    <img src="../images/logo2.png" alt="">
-                    <img src="../images/logo3.png" alt="">
-                    <img src="../images/logo4.png" alt="">
-                </div>
+                <div class="container-fluid imagesSocios">
+                    <div class="row d-flex justify-content-between">
+                        <img class="col-3" src="../images/logo1.png" alt="">
+                        <img class="col-3" src="../images/logo2.png" alt="">
+                        <img class="col-3" src="../images/logo3.png" alt="">
+                        <img class="col-3" src="../images/logo4.png" alt="">
+                    </div>    
+                </div>   
             </div>
             <div class="container-fluid p-4 footerDiv">
                 <div class="logosRedesResponsive">

@@ -18,11 +18,11 @@
     <div class="contenedorGridProductos">
         <header>
             <div class="container-fluid">
-                <div class="tituloResponsive">
-                    <div class="col text-center  titUno">
+                <div class="row mw-100 m-0 tituloResponsive">
+                    <div class="col text-center titUno">
                         <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
                     </div>
-                    <div class="titDos">
+                    <div class="col titDos">
                         <a href="../pages/productos.html">
                             <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
                     </div>
@@ -48,7 +48,7 @@
                         </div>
                     </nav>
                 </div> 
-                <nav class="navegacion">
+                <nav class="container-fluid navegacion">
                     <h2 id="weedKings"><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
                     <ul class="menu">
                         <li><a href="../index.html">Inicio</a></li>
@@ -67,7 +67,8 @@
                         <a href="../pages/productos.html">
                             <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras"
                                 title="Ir al carrito"></a>
-                    </div>
+                    </div>  
+                    
                 </nav>
             </div>
         </header>  
@@ -75,7 +76,7 @@
         <main>
             <div class="container-fluid sectionProd">
                 <div class="row parrafoSectionComu">
-                    <p>Bienvenido a la comunidad de WeedKings, aquí te mostraremos la ultima información relacionada con el
+                    <p class="col">Bienvenido a la comunidad de WeedKings, aquí te mostraremos la ultima información relacionada con el
                         cannabis. Navega en las diferentes secciones: <a href=""
                             style="text-decoration: none; color: #762F58">Noticias, </a><a href=""
                             style="text-decoration:none; color: #762F58">Información, </a><a href=""
@@ -90,9 +91,9 @@
             <div class="tituloSeccion container-fluid p-3">
                 <h2 id="noticias">Noticias:</h2>
 
-                <div class="cannabisExporta">
-                    <img src="../images/cannabisexporta.png" alt="fotoCannabis">
-                    <div class="textoNoticia">
+                <div class="row m-0 cannabisExporta">
+                    <img class="col-4" src="../images/cannabisexporta.png" alt="fotoCannabis">
+                    <div class="col-8 text-center textoNoticia">
                         <h3>Uruguay: Pionero en cultivo y exportación de cannabis</h3>
                         <p>El país es precursor en la legislación de la planta para sus diversos usos y desde 2013 regula la
                             producción, comercialización y consumo.
@@ -110,11 +111,11 @@
                     </div>
                 </div>
             </div>
-            <div class="tituloSeccion container-fluid p-3">
+            <div class="tituloSeccion container-fluid p-4">
                 <h2 id="informacion">Información:</h2>
-                <div class="p-2 tabla">
+                <div class="row m-0 text-center d-flex justify-content-center tabla">
                     <h3><u>Tabla:</u></h3>
-                    <table border="2" Cellpadding="3">
+                    <table class="col-3 justify-content-center" border="2" Cellpadding="3">
 
                         <tr>
                             <th></th>
@@ -156,7 +157,7 @@
 
                     </table>
                     <p>Tabla informativa sobre porcentajes de TCH productivos según el país.</p>
-                    <table border="2" Cellpadding="3">
+                    <table class="col-3" border="2" Cellpadding="3">
                         <tr>
                             <th></th>
                             <th class="colorCuadroTabla">Consumo % </th>
@@ -250,18 +251,20 @@
             <div>
                 <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
             </div>
-            <div class="socios">
-                <div>
-                    <h5>Socios principales:</h5>
+            <div class="container-fluid socios">
+                <div class="row mw-100">
+                    <h5 class="col p-0">Socios principales:</h5>
                 </div>
-                <div class="imagesSocios">
-                    <img src="../images/logo1.png" alt="">
-                    <img src="../images/logo2.png" alt="">
-                    <img src="../images/logo3.png" alt="">
-                    <img src="../images/logo4.png" alt="">
+                <div class="container-fluid imagesSocios">
+                    <div class="row d-flex justify-content-between">
+                        <img class="col-3" src="../images/logo1.png" alt="">
+                        <img class="col-3" src="../images/logo2.png" alt="">
+                        <img class="col-3" src="../images/logo3.png" alt="">
+                        <img class="col-3" src="../images/logo4.png" alt="">
+                    </div>    
                 </div>   
             </div>
-            <div class="footerDivIndex">
+            <div class="container-fluid footerDivIndex">
                 <div class="logosRedes">
                     <a href="https://www.facebook.com/" target="_blank"><img src="../images/Facebook.png"
                             alt="Facebook"></a>
@@ -276,7 +279,7 @@
                     <a href="https://api.whatsapp.com/send?phone=+59895408091" target="_blank"><img src="../images/whatsapp.png"
                             alt="Wathsapp"></a>
                 </div>
-                <div class="logosRedesResponsiveDesktop">
+                <div class="row logosRedesResponsiveDesktop">
                     <a href="https://www.facebook.com/" target="_blank"><img src="../images/FacebookResp.png"
                             alt="Facebook"></a>
                     <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/InstagramResp.png"
