@@ -1,0 +1,300 @@
+/*Media Queries*/
+/*Media querie para pantalla: Desktop y grandes*/
+@media  (min-width: 1201px ){
+    /*Sección menú*/
+    header{
+        .tituloResponsive{
+            display: none;
+        }
+        .desplegable{
+            display: none;
+        }
+    }
+    main{
+        padding-top: 4%;
+    }
+    footer{
+        .footerDivIndex{
+            .logosRedes{
+                display: none;
+            }
+            .logosRedesResponsive{
+                display: none;
+            }
+        }
+    }
+}
+
+
+/*Media querie para tablets y pantallas medianas*/
+@media (min-width: 601px) and (max-width: 1200px){
+    // Sección menú
+    header{
+        // Titulo y imagen carrito responsive
+        .tituloResponsive{
+            display: grid;
+            grid-template-areas: "titUno titDos";
+            grid-template-columns: 1.5fr 1fr;
+            background-color: $color-menu-fondo;
+            .titUno{
+                grid-area: titUno;
+                align-self: center;
+                justify-self: end;
+            }
+            .titDos{
+                grid-area: titDos;
+                justify-self: end;
+                align-self: center;  
+                width: 45%;
+                margin-bottom: 2%;
+                a{
+                    img{
+                        width: 40%;
+                        padding-top: 2% ;
+                    }
+                }
+            }
+
+        }
+
+        // Menú general para desktop y pantallas grandes en general
+        .navegacion{
+            display: none;
+        }
+        // Menú bootstrap desplegable para celulares y tablets 
+        .desplegable{
+            .menu{
+                li{
+                    a{
+                        justify-content: space-around;
+                        color: $color-vino-letras;
+                        font-size: 25px;
+                        text-decoration: none;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+    }    
+    main{
+        padding-top: 0%;
+        // Imagen de fondo he icono que desliza para abajo
+        .contenedorResponsive{
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("../images/fondoMain.jpg");
+        }
+        .iconoDesplegable{
+            display: none;
+        }
+    }
+    footer{
+        // Icono de wathsapp con posicion FIXED
+        .botonWsp{
+            display: none;
+        }
+        // apartado para los logos de redes sociales
+        .footerDivIndex{
+            .logosRedes{
+                display: none;
+            }
+            .logosRedesResponsiveDesktop{
+                display: none;
+            }
+            .derechos{
+                padding: 0% 2%;
+                text-align: center;
+            }
+        }
+    } 
+        
+
+}
+
+/*Media queries para celulares y pantallas pequeñas*/
+@media  (min-width: 480px) and (max-width: 600px ){
+    header{
+        .tituloResponsive{
+            display: grid;
+            grid-template-areas: "titUno titDos";
+            grid-template-columns: 1.5fr 1fr;
+            background-color: $color-menu-fondo;
+            .titUno{
+                grid-area: titUno;
+                align-self: center;
+                justify-self: end;
+            }
+        
+            .titDos{
+                grid-area: titDos;
+                justify-self: end;
+                align-self: center;  
+                width: 50%;
+                a{
+                    img{
+                        width: 40%;
+                        padding-top: 2% ;
+                    }
+                }
+                
+            }
+        }
+        // Menú bootstrap desplegable para celulares y tablets 
+        .desplegable{
+            .menu{
+                li{
+                    a{
+                        justify-content: space-around;
+                        color: $color-vino-letras;
+                        font-size: 25px;
+                        text-decoration: none;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+        .navegacion{ 
+            display: none;
+        }
+    }
+    main{
+        .contenedorResponsive{
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("../images/fondoMain.jpg");
+            .iconoDesplegable{
+                display: none;
+            }
+        }
+    }
+    
+    footer{
+        .btn-wsp{
+            display: none;
+        }
+        .footerDivIndex{
+            display: grid;
+            grid-template-columns: 10% 90%;
+            background-color: rgb(37, 37, 37);
+            .logosRedes{
+                display: none;
+            }
+            .logosRedesResponsive{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 5%;
+                gap: 2%;
+            }
+            .logosRedesResponsiveDesktop{
+                display: none;
+            }
+        }
+        .derechos{
+            padding: 0% 2%;
+            h6{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media  (min-width: 320px) and (max-width: 480px ){
+    header{
+        .tituloResponsive{
+            display: grid;
+            grid-template-areas: "titUno titDos";
+            grid-template-columns: 1.5fr 1fr;
+            background-color: $color-menu-fondo;
+            .titUno{
+                grid-area: titUno;
+                align-self: center;
+                justify-self: end;
+            }
+        
+            .titDos{
+                grid-area: titDos;
+                justify-self: end;
+                align-self: center;  
+                width: 50%;
+                a{
+                    img{
+                        width: 40%;
+                        padding-top: 2% ;
+                    }
+                }
+                
+            }
+        }
+        // Menú bootstrap desplegable para celulares y tablets 
+        .desplegable{
+            .menu{
+                li{
+                    a{
+                        justify-content: space-around;
+                        color: $color-vino-letras;
+                        font-size: 25px;
+                        text-decoration: none;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+        .navegacion{ 
+            display: none;
+        }
+    }
+    main{
+        .contenedorResponsive{
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("../images/fondoMain.jpg");
+            .iconoDesplegable{
+                display: none;
+            }
+        }
+    
+    }
+    footer{
+        .btn-wsp{
+            display: none;
+        }
+        .socios{
+            .imagesSocios{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 4%;
+                img{
+                    justify-self: center;
+                }
+            }
+        }
+        .footerDivIndex{
+            display: flex;
+            flex-direction: column;
+            .logosRedes{
+                display: none;
+            }
+            
+            .logosRedesResponsive{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 5%;
+                gap: 5%;
+            }
+        
+            .logosRedesResponsiveDesktop{
+                display: none;
+            }   
+            .derechos{
+                text-align: center;
+            }
+        }
+    }
+}
