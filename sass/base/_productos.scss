@@ -1,0 +1,117 @@
+@import "../components/variables";
+
+// PAGINA NOSOTROS
+.contenedorGridProductos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+                         "main"
+                         "section"
+                         "footer";
+    main{
+        grid-area: main;
+        //  Resumen de la página Productos 
+        .sectionProd{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+            .parrafoSectionProd{
+                width: 90%;
+                font-style: italic;
+                font-size: 60px;
+                margin: 30px 50px;
+                text-shadow: 0px 20px 10px 10px black;
+            }
+            // Recuadro con iconos sobre seguridad, calidad y envío
+            .recuadroBlanco{
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                width: 60%;
+                height: 1%;
+                margin-bottom: 20px;
+                box-shadow: 2px 2px 6px 0px black;
+                .envioSeguridad{
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 5%;
+                    p{
+                        padding-top: 34px;
+                        font-style: italic;
+                        color: rgb(61, 61, 61);
+                    }
+                    .imagenRecuadro{
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+    section{
+        // Sección de productos
+        .sectionProductos{
+            width: 100%;
+            height: auto;
+            // Linea que recuadra el contenido de productos
+            .lineaExterna{
+                width: auto;
+                height: auto;
+                border: 1px solid rgb(63, 63, 63);
+                margin: 5px 2px 5px 2px;
+                // Iconos para desplazarse a zonas detalladas
+                .iconosTienda{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding-top: 10px;
+                    img{
+                        border: 1px solid $color-borde-iconos;
+                        box-shadow: 2px 2px 4px 0px black;
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: calc(0.3s);
+                        }
+                    }
+                }
+                // Contenedor de cada producto en la tienda con su imagen, texto
+                .productosTienda{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;  
+                    gap: 5%;
+                    padding-top: 50px;
+                    margin-bottom: 50px;
+                    .imagenProd{
+                        padding-top: 5%;
+                        font-size: 2rem;
+                        p{
+                            text-align: center;
+                        }
+                        .imgProducto{
+                            box-shadow: 3px 3px 5px 0px;
+                        }
+                        .imgAgregarCarrito{
+                            width: 15%;
+                            margin-left: 42%;
+                            &:hover{
+                                transform: scale(1.2);
+                                transition: transform 0.2s;
+                            }
+                        }
+                        .addCarro{
+                            font-size: 1rem;
+                            color: rgb(156, 39, 88);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

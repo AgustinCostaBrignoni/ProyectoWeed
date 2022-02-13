@@ -43,6 +43,9 @@ footer{
                 width: 97%;
                 display: flex;
                 justify-content: space-evenly;
+                img{
+                    border: 1.5px solid $color-vino-letras;
+                }
             }
         
         }
@@ -53,6 +56,11 @@ footer{
         background-color: rgb(37, 37, 37);
         .logosRedesResponsiveDesktop{
             padding-top: 40%;
+            a{
+                img{
+                    border: 1px solid $color-borde-iconos;
+                }
+            }
         }
         .derechos{
             display: flex;

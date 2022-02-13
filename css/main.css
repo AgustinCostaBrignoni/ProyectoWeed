@@ -107,12 +107,16 @@ footer {
       width: 97%;
       display: flex;
       justify-content: space-evenly; }
+      footer .socios .imagesSocios img {
+        border: 1.5px solid #762F58; }
   footer .footerDivIndex {
     display: grid;
     grid-template-columns: 10% 90%;
     background-color: #252525; }
     footer .footerDivIndex .logosRedesResponsiveDesktop {
       padding-top: 40%; }
+      footer .footerDivIndex .logosRedesResponsiveDesktop a img {
+        border: 1px solid #181818; }
     footer .footerDivIndex .derechos {
       display: flex;
       flex-direction: column;
@@ -130,9 +134,7 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas: "header"
- "main"
- "footer";
+  grid-template-areas: "header" "main" "footer";
   /*Main*/ }
   .contenedorGrid main {
     grid-area: main; }
@@ -193,6 +195,281 @@ footer {
               font-size: 28px;
               text-align: center; }
 
+/*PAGINA NOSOTROS*/
+.contenedorGridNosotros {
+  display: grid;
+  grid-template-columns: 100%;
+  width: 100%;
+  grid-template-areas: "header" "main" "footer";
+  /*Main*/ }
+  .contenedorGridNosotros main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%; }
+    .contenedorGridNosotros main .bloqueMainNosotros {
+      width: 100%;
+      height: 100px;
+      box-shadow: 1px 1px 2px 0px black;
+      background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+      .contenedorGridNosotros main .bloqueMainNosotros h2 {
+        padding-top: 25px;
+        font-style: italic;
+        font-size: 60px;
+        font-weight: 100;
+        text-shadow: 0px 20px 10px 10px black;
+        text-align: center; }
+    .contenedorGridNosotros main .recuadroPadreUno {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center; }
+      .contenedorGridNosotros main .recuadroPadreUno #imagen-uno {
+        width: auto;
+        position: relative;
+        z-index: -1;
+        left: 15%;
+        top: 35%; }
+        .contenedorGridNosotros main .recuadroPadreUno #imagen-uno img {
+          border: 1px solid #181818; }
+    .contenedorGridNosotros main .recuadroPadreDos {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10%; }
+      .contenedorGridNosotros main .recuadroPadreDos #imagen-dos {
+        width: auto;
+        position: relative;
+        z-index: -1;
+        top: 35%;
+        left: 5%; }
+        .contenedorGridNosotros main .recuadroPadreDos #imagen-dos img {
+          border: 1px solid #181818; }
+
+.contenedorGridProductos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "main" "section" "footer"; }
+  .contenedorGridProductos main {
+    grid-area: main; }
+    .contenedorGridProductos main .sectionProd {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+      .contenedorGridProductos main .sectionProd .parrafoSectionProd {
+        width: 90%;
+        font-style: italic;
+        font-size: 60px;
+        margin: 30px 50px;
+        text-shadow: 0px 20px 10px 10px black; }
+      .contenedorGridProductos main .sectionProd .recuadroBlanco {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 60%;
+        height: 1%;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 6px 0px black; }
+        .contenedorGridProductos main .sectionProd .recuadroBlanco .envioSeguridad {
+          width: 70%;
+          display: flex;
+          justify-content: space-between;
+          padding-right: 5%; }
+          .contenedorGridProductos main .sectionProd .recuadroBlanco .envioSeguridad p {
+            padding-top: 34px;
+            font-style: italic;
+            color: #3d3d3d; }
+          .contenedorGridProductos main .sectionProd .recuadroBlanco .envioSeguridad .imagenRecuadro {
+            padding-right: 10px; }
+  .contenedorGridProductos section .sectionProductos {
+    width: 100%;
+    height: auto; }
+    .contenedorGridProductos section .sectionProductos .lineaExterna {
+      width: auto;
+      height: auto;
+      border: 1px solid #3f3f3f;
+      margin: 5px 2px 5px 2px; }
+      .contenedorGridProductos section .sectionProductos .lineaExterna .iconosTienda {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 10px; }
+        .contenedorGridProductos section .sectionProductos .lineaExterna .iconosTienda img {
+          border: 1px solid #181818;
+          box-shadow: 2px 2px 4px 0px black; }
+          .contenedorGridProductos section .sectionProductos .lineaExterna .iconosTienda img:hover {
+            transform: scale(1.1);
+            transition: calc(0.3s); }
+      .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5%;
+        padding-top: 50px;
+        margin-bottom: 50px; }
+        .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd {
+          padding-top: 5%;
+          font-size: 2rem; }
+          .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd p {
+            text-align: center; }
+          .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .imgProducto {
+            box-shadow: 3px 3px 5px 0px; }
+          .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .imgAgregarCarrito {
+            width: 15%;
+            margin-left: 42%; }
+            .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .imgAgregarCarrito:hover {
+              transform: scale(1.2);
+              transition: transform 0.2s; }
+          .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .addCarro {
+            font-size: 1rem;
+            color: #9c2758; }
+
+.contenedorGridComunidad {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "main" "section" "footer"; }
+  .contenedorGridComunidad main .sectionProd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+    .contenedorGridComunidad main .sectionProd .parrafoSectionComu {
+      width: 90%;
+      font-style: italic;
+      font-size: 40px;
+      margin: 30px 50px;
+      text-shadow: 0px 20px 10px 10px black; }
+  .contenedorGridComunidad section {
+    grid-area: section; }
+    .contenedorGridComunidad section .tituloSeccion h2 {
+      font-weight: 400;
+      font-size: 45px;
+      margin-left: 1%;
+      text-align: center; }
+    .contenedorGridComunidad section .tituloSeccion .cannabisExporta {
+      background: #c7c5c5;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: 100%;
+      padding-top: 50px; }
+      .contenedorGridComunidad section .tituloSeccion .cannabisExporta img {
+        width: 20rem;
+        height: 15rem;
+        padding-left: 1%;
+        padding-bottom: 2%; }
+      .contenedorGridComunidad section .tituloSeccion .cannabisExporta .textoNoticia h3 {
+        color: #424242;
+        font-size: 160%;
+        text-decoration-line: underline;
+        text-align: center; }
+      .contenedorGridComunidad section .tituloSeccion .cannabisExporta .textoNoticia p {
+        text-align: center;
+        padding: 10px 30px 0px 30px;
+        font-size: 100%; }
+    .contenedorGridComunidad section .tituloSeccion #informacion {
+      padding-top: 10px;
+      padding-left: 10px; }
+    .contenedorGridComunidad section .tituloSeccion .tabla {
+      background: #c7c5c5;
+      display: flex;
+      justify-content: start;
+      gap: 15px; }
+      .contenedorGridComunidad section .tituloSeccion .tabla h3 {
+        font-size: 35px;
+        margin-left: 1%; }
+      .contenedorGridComunidad section .tituloSeccion .tabla p {
+        padding-top: 20px; }
+      .contenedorGridComunidad section .tituloSeccion .tabla table {
+        background-color: white;
+        border-color: #762F58;
+        margin: 1%; }
+        .contenedorGridComunidad section .tituloSeccion .tabla table tr .colorCuadroTabla {
+          background-color: #762F58;
+          font-style: italic;
+          color: white; }
+    .contenedorGridComunidad section .tituloSeccion .videoTexto {
+      background-color: #c7c5c5;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .contenedorGridComunidad section .tituloSeccion .videoTexto div h6 {
+        text-align: center;
+        width: auto;
+        font-size: 25px; }
+      .contenedorGridComunidad section .tituloSeccion .videoTexto div iframe {
+        border: 1px solid #181818; }
+
+.contenedorGridContacto {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "main" "footer"; }
+  .contenedorGridContacto main {
+    grid-area: main; }
+    .contenedorGridContacto main .redesContacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 100;
+      font-size: 1.5rem;
+      gap: 15px;
+      display: flex;
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+      .contenedorGridContacto main .redesContacto h2 {
+        margin-top: 3%; }
+      .contenedorGridContacto main .redesContacto a img {
+        border: 1px solid black; }
+    .contenedorGridContacto main form {
+      padding: 0% 1% 0% 1%; }
+      .contenedorGridContacto main form .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .contenedorGridContacto main form .formulario div label {
+          font-size: 16px;
+          font-weight: 900;
+          color: #762F58; }
+        .contenedorGridContacto main form .formulario div .typeRadio {
+          margin-top: 10px; }
+        .contenedorGridContacto main form .formulario div .submit {
+          width: 100px;
+          margin-bottom: 20px;
+          box-shadow: 1px 1px 2px 0px #020202; }
+  .contenedorGridContacto footer .footerDiv {
+    display: flex;
+    display: row;
+    padding: 25px 0px 10px 0px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #252525; }
+    .contenedorGridContacto footer .footerDiv .logosRedesResponsive a img {
+      border: 1px solid #181818; }
+    .contenedorGridContacto footer .footerDiv .derechos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #888888;
+      font-size: 20px;
+      padding: 0% 2%; }
+      .contenedorGridContacto footer .footerDiv .derechos h6 {
+        text-align: center; }
+  .contenedorGridContacto footer .logosRedes {
+    display: none; }
+
 /*MediaQueries*/
 /*Media Queries*/
 /*Media querie para pantalla: Desktop y grandes*/
@@ -204,6 +481,44 @@ footer {
     display: none; }
   main {
     padding-top: 4%; }
+    main .recuadroTexto {
+      background-color: #fff8ec;
+      border: 0.5px solid #9b9b9b;
+      width: 30%;
+      height: auto;
+      padding: 10px 55px 10px 55px;
+      box-shadow: 1px 1px 5px 0px;
+      font-size: 148%;
+      line-height: 105%;
+      font-style: normal;
+      margin-top: 5%;
+      margin-left: 10%; }
+      main .recuadroTexto h2 {
+        font-size: 130%;
+        text-align: center; }
+        main .recuadroTexto h2:hover {
+          transform: scale(1.02);
+          color: #762F58;
+          transition: 0.2s; }
+    main .recuadroTextoDos {
+      background-color: #fff8ec;
+      border: 0.5px solid #9b9b9b;
+      width: 30%;
+      height: auto;
+      padding: 10px 55px 10px 55px;
+      box-shadow: 1px 1px 5px 0px;
+      font-size: 148%;
+      line-height: 105%;
+      font-style: normal;
+      margin-top: 6%; }
+      main .recuadroTextoDos h2 {
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 130%; }
+        main .recuadroTextoDos h2:hover {
+          transform: scale(1.02);
+          color: #762F58;
+          transition: 0.2s; }
   footer .footerDivIndex .logosRedes {
     display: none; }
   footer .footerDivIndex .logosRedesResponsive {
@@ -237,20 +552,113 @@ footer {
     font-size: 25px;
     text-decoration: none;
     transition: 0.4s; }
-  main {
+  .contenedorGrid {
     padding-top: 0%; }
-    main .contenedorResponsive {
+    .contenedorGrid .contenedorResponsive {
       display: flex;
       height: auto;
       flex-direction: column;
       justify-content: center;
       background-image: url("../images/fondoMain.jpg"); }
-    main .iconoDesplegable {
+    .contenedorGrid .iconoDesplegable {
       display: none; }
+  .contenedorGridNosotros .recuadroPadreUno {
+    justify-content: center; }
+    .contenedorGridNosotros .recuadroPadreUno #imagen-uno {
+      display: none; }
+    .contenedorGridNosotros .recuadroPadreUno .recuadroTexto {
+      background-color: #fff8ec;
+      border: 0.5px solid #9b9b9b;
+      width: 60%;
+      height: auto;
+      padding: 10px 55px 10px 55px;
+      box-shadow: 1px 1px 5px 0px;
+      font-size: 148%;
+      line-height: 105%;
+      font-style: normal;
+      margin-right: 10%;
+      margin-top: 5%; }
+  .contenedorGridNosotros .recuadroPadreDos #imagen-dos {
+    display: none; }
+  .contenedorGridNosotros .recuadroPadreDos .recuadroTextoDos {
+    background-color: #fff8ec;
+    border: 0.5px solid #9b9b9b;
+    width: 60%;
+    height: auto;
+    padding: 10px 55px 10px 55px;
+    box-shadow: 1px 1px 5px 0px;
+    font-size: 148%;
+    line-height: 105%;
+    font-style: normal;
+    margin-top: 4%; }
+  .contenedorGridProductos main .sectionProd .recuadroBlanco {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 95%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 6px 0px black; }
+    .contenedorGridProductos main .sectionProd .recuadroBlanco .envioSeguridad {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 10%;
+      margin-left: 3%; }
+      .contenedorGridProductos main .sectionProd .recuadroBlanco .envioSeguridad p {
+        width: 100%;
+        padding-top: 34px;
+        font-style: italic;
+        color: #3d3d3d; }
+  .contenedorGridProductos section .sectionProductos .lineaExterna div .iconosTienda {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 0.8%; }
+    .contenedorGridProductos section .sectionProductos .lineaExterna div .iconosTienda img {
+      width: 97%; }
+  .contenedorGridComunidad .cannabisExporta {
+    background: #c7c5c5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px; }
+    .contenedorGridComunidad .cannabisExporta img {
+      width: 20rem;
+      height: 15rem;
+      align-self: center;
+      padding-left: 1%;
+      padding-bottom: 2%; }
+    .contenedorGridComunidad .cannabisExporta .textoNoticia h3 {
+      color: #424242;
+      font-size: 160%;
+      text-decoration-line: underline;
+      text-align: center; }
+    .contenedorGridComunidad .cannabisExporta .textoNoticia p {
+      text-align: center;
+      padding: 10px 30px 0px 30px;
+      font-size: 100%; }
+  .contenedorGridComunidad #tituloSeccionVideos .videoTexto {
+    width: 100%;
+    flex-wrap: wrap; }
+  .contenedorGridContacto footer .footerDiv {
+    padding: 1% 0% 1% 0%;
+    display: flex;
+    flex-direction: column; }
+    .contenedorGridContacto footer .footerDiv .logosRedesResponsive {
+      padding-bottom: 1%; }
   footer .botonWsp {
     display: none; }
   footer .footerDivIndex .logosRedes {
     display: none; }
+  footer .footerDivIndex .logosRedesResponsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5%;
+    gap: 5%; }
+    footer .footerDivIndex .logosRedesResponsive a img {
+      border: 1px solid #181818; }
   footer .footerDivIndex .logosRedesResponsiveDesktop {
     display: none; }
   footer .footerDivIndex .derechos {
@@ -258,7 +666,7 @@ footer {
     text-align: center; } }
 
 /*Media queries para celulares y pantallas pequeñas*/
-@media (min-width: 480px) and (max-width: 600px) {
+@media (min-width: 481px) and (max-width: 600px) {
   header .tituloResponsive {
     display: grid;
     grid-template-areas: "titUno titDos";
@@ -284,14 +692,123 @@ footer {
     transition: 0.4s; }
   header .navegacion {
     display: none; }
-  main .contenedorResponsive {
+  .contenedorGrid .contenedorResponsive {
     display: flex;
     height: auto;
     flex-direction: column;
     justify-content: center;
     background-image: url("../images/fondoMain.jpg"); }
-    main .contenedorResponsive .iconoDesplegable {
+    .contenedorGrid .contenedorResponsive .iconoDesplegable {
       display: none; }
+  .contenedorGridNosotros .bloqueMainNosotros .quienesSomos {
+    font-size: 55px; }
+  .contenedorGridNosotros .recuadroPadreUno #imagen-uno {
+    display: none; }
+  .contenedorGridNosotros .recuadroPadreUno .recuadroTexto {
+    background-color: #fff8ec;
+    border: 0.5px solid #9b9b9b;
+    width: 60%;
+    height: auto;
+    padding: 10px 55px 10px 55px;
+    box-shadow: 1px 1px 5px 0px;
+    font-size: 148%;
+    line-height: 105%;
+    font-style: normal;
+    margin-top: 5%;
+    margin-right: 5%; }
+    .contenedorGridNosotros .recuadroPadreUno .recuadroTexto h2 {
+      text-align: center; }
+  .contenedorGridNosotros .recuadroPadreDos #imagen-dos {
+    display: none; }
+  .contenedorGridNosotros .recuadroPadreDos .recuadroTextoDos {
+    background-color: #fff8ec;
+    border: 0.5px solid #9b9b9b;
+    width: 60%;
+    height: auto;
+    padding: 10px 55px 10px 55px;
+    box-shadow: 1px 1px 5px 0px;
+    font-size: 148%;
+    line-height: 105%;
+    font-style: normal;
+    margin-top: 4%;
+    margin-left: 10%; }
+    .contenedorGridNosotros .recuadroPadreDos .recuadroTextoDos h2 {
+      text-align: center; }
+  .contenedorGridProductos main .sectionProd .parrafoSectionProd {
+    font-size: 2rem; }
+  .contenedorGridProductos main .sectionProd .recuadroBlanco {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 6px 0px black; }
+    .contenedorGridProductos main .sectionProd .recuadroBlanco .envioSeguridad {
+      width: 71%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-right: 1%; }
+      .contenedorGridProductos main .sectionProd .recuadroBlanco .envioSeguridad p {
+        width: 100%;
+        padding-top: 1%;
+        margin-left: 21%;
+        text-align: start;
+        font-style: italic;
+        color: #3d3d3d; }
+  .contenedorGridProductos section .sectionProductos .lineaExterna div .iconosTienda {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 3%; }
+    .contenedorGridProductos section .sectionProductos .lineaExterna div .iconosTienda img {
+      width: 90%; }
+  .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .imgProducto {
+    margin-left: 2%; }
+  .contenedorGridComunidad main .sectionProd .parrafoSectionComu {
+    font-size: 2rem; }
+  .contenedorGridComunidad section .tituloSeccion .cannabisExporta {
+    background: #c7c5c5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px; }
+    .contenedorGridComunidad section .tituloSeccion .cannabisExporta img {
+      width: 20rem;
+      height: 15rem;
+      align-self: center;
+      padding-left: 1%;
+      padding-bottom: 2%; }
+    .contenedorGridComunidad section .tituloSeccion .cannabisExporta h3 {
+      color: #424242;
+      font-size: 160%;
+      text-decoration-line: underline;
+      text-align: center; }
+    .contenedorGridComunidad section .tituloSeccion .cannabisExporta p {
+      text-align: center;
+      padding: 10px 30px 0px 30px;
+      font-size: 100%; }
+  .contenedorGridComunidad section .tituloSeccion .tabla {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%; }
+  .contenedorGridComunidad section .tituloSeccion .videoTexto {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap; }
+    .contenedorGridComunidad section .tituloSeccion .videoTexto div {
+      width: 100%;
+      flex-wrap: wrap; }
+    .contenedorGridComunidad section .tituloSeccion .videoTexto iframe {
+      width: 93%;
+      margin: 3%; }
+  .contenedorGridContacto footer .footerDiv {
+    flex-direction: column; }
+    .contenedorGridContacto footer .footerDiv .logosRedesResponsive {
+      padding-bottom: 2%; }
   footer .btn-wsp {
     display: none; }
   footer .footerDivIndex {
@@ -306,6 +823,8 @@ footer {
       justify-content: center;
       padding-bottom: 5%;
       gap: 2%; }
+      footer .footerDivIndex .logosRedesResponsive a img {
+        border: 1px solid #181818; }
     footer .footerDivIndex .logosRedesResponsiveDesktop {
       display: none; }
   footer .derechos {
@@ -339,14 +858,129 @@ footer {
     transition: 0.4s; }
   header .navegacion {
     display: none; }
-  main .contenedorResponsive {
+  .contenedorGrid .contenedorResponsive {
     display: flex;
     height: auto;
     flex-direction: column;
     justify-content: center;
     background-image: url("../images/fondoMain.jpg"); }
-    main .contenedorResponsive .iconoDesplegable {
+    .contenedorGrid .contenedorResponsive .iconoDesplegable {
       display: none; }
+  .contenedorGridNosotros .bloqueMainNosotros .quienesSomos {
+    font-size: 40px; }
+  .contenedorGridNosotros .recuadroPadreUno {
+    padding: 2% 2% 2% 2%; }
+    .contenedorGridNosotros .recuadroPadreUno #imagen-uno {
+      display: none; }
+    .contenedorGridNosotros .recuadroPadreUno .recuadroTexto {
+      background-color: #fff8ec;
+      border: 0.5px solid #9b9b9b;
+      width: 95%;
+      height: 100%;
+      padding: 10px 55px 10px 55px;
+      box-shadow: 1px 1px 5px 0px;
+      font-size: 148%;
+      line-height: 105%;
+      font-style: normal; }
+  .contenedorGridNosotros .recuadroPadreDos {
+    padding: 2% 2% 2% 2%; }
+    .contenedorGridNosotros .recuadroPadreDos #imagen-dos {
+      display: none; }
+    .contenedorGridNosotros .recuadroPadreDos .recuadroTextoDos {
+      background-color: #fff8ec;
+      border: 0.5px solid #9b9b9b;
+      width: 95%;
+      height: auto;
+      padding: 10px 55px 10px 55px;
+      box-shadow: 1px 1px 5px 0px;
+      font-size: 148%;
+      line-height: 105%;
+      font-style: normal;
+      margin-top: 10%; }
+  .contenedorGridProductos main .sectionProd .parrafoSectionProd {
+    font-size: 2rem; }
+  .contenedorGridProductos main .sectionProd .recuadroBlanco {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 47%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 6px 0px black; }
+  .contenedorGridProductos main .sectionProd .envioSeguridad {
+    width: 71%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 1%; }
+    .contenedorGridProductos main .sectionProd .envioSeguridad p {
+      width: 100%;
+      padding-top: 1%;
+      margin-left: 21%;
+      text-align: start;
+      font-style: italic;
+      color: #3d3d3d; }
+  .contenedorGridProductos section .sectionProductos .lineaExterna div .iconosTienda {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 3%; }
+    .contenedorGridProductos section .sectionProductos .lineaExterna div .iconosTienda img {
+      width: 90%; }
+  .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .imgProducto {
+    width: 80%;
+    margin-left: 10%; }
+  .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd p {
+    font-size: 75%; }
+  .contenedorGridComunidad main .sectionProd .parrafoSectionComu {
+    font-size: 1.5rem; }
+  .contenedorGridComunidad section .tituloSeccion h2 {
+    font-size: 2rem; }
+  .contenedorGridComunidad section .tituloSeccion .cannabisExporta {
+    background: #c7c5c5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px; }
+    .contenedorGridComunidad section .tituloSeccion .cannabisExporta img {
+      width: 20rem;
+      height: 15rem;
+      align-self: center;
+      padding-left: 1%;
+      padding-bottom: 2%; }
+    .contenedorGridComunidad section .tituloSeccion .cannabisExporta .textoNoticia h3 {
+      color: #424242;
+      font-size: 160%;
+      text-decoration-line: underline;
+      text-align: center; }
+    .contenedorGridComunidad section .tituloSeccion .cannabisExporta .textoNoticia p {
+      text-align: center;
+      padding: 10px 30px 0px 30px;
+      font-size: 100%; }
+  .contenedorGridComunidad section .tituloSeccion .tabla {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%; }
+  .contenedorGridComunidad section .tituloSeccion .videoTexto {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap; }
+    .contenedorGridComunidad section .tituloSeccion .videoTexto div {
+      width: 100%;
+      flex-wrap: wrap; }
+      .contenedorGridComunidad section .tituloSeccion .videoTexto div h6 {
+        font-size: 1.3rem; }
+    .contenedorGridComunidad section .tituloSeccion .videoTexto iframe {
+      width: 93%;
+      margin: 3%; }
+  .contenedorGridContacto main .redesContacto p {
+    font-size: 1.3rem; }
+  .contenedorGridContacto footer .footerDiv {
+    flex-direction: column; }
+    .contenedorGridContacto footer .footerDiv .logosRedesResponsive {
+      padding-bottom: 2%; }
   footer .btn-wsp {
     display: none; }
   footer .socios .imagesSocios {
@@ -365,6 +999,8 @@ footer {
       justify-content: center;
       padding-bottom: 5%;
       gap: 5%; }
+      footer .footerDivIndex .logosRedesResponsive a img {
+        border: 1px solid #181818; }
     footer .footerDivIndex .logosRedesResponsiveDesktop {
       display: none; }
     footer .footerDivIndex .derechos {

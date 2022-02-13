@@ -1,3 +1,4 @@
+@import "variables.scss";
 /*Media Queries*/
 /*Media querie para pantalla: Desktop y grandes*/
 @media  (min-width: 1201px ){
@@ -12,6 +13,52 @@
     }
     main{
         padding-top: 4%;
+        .recuadroTexto {
+            background-color: rgb(255, 248, 236) ;
+            border: 0.5px solid rgb(155, 155, 155);
+            width: 30%;
+            height: auto;
+            padding: 10px 55px 10px 55px;
+            box-shadow: 1px 1px 5px 0px;
+            font-size: 148%;
+            line-height: 105%;
+            font-style: normal;
+            margin-top: 5%;
+            margin-left: 10%;
+            h2{
+                font-size: 130%;
+                text-align: center;
+                &:hover{
+                    transform: scale(1.02);
+                    color: $color-vino-letras;
+                    transition: 0.2s;
+                    
+                }
+            }
+        }
+        .recuadroTextoDos{
+            background-color: rgb(255, 248, 236) ;
+            border: 0.5px solid rgb(155, 155, 155);
+            width: 30%;
+            height: auto;
+            padding: 10px 55px 10px 55px;
+            box-shadow: 1px 1px 5px 0px;
+            font-size: 148%;
+            line-height: 105%;
+            font-style: normal;
+            margin-top: 6%;
+            h2{
+                text-align: center;
+                flex-wrap: wrap;
+                font-size: 130%; 
+                &:hover{
+                    transform: scale(1.02);
+                    color: $color-vino-letras;
+                    transition: 0.2s;
+                }
+            }
+        
+        }
     }
     footer{
         .footerDivIndex{
@@ -75,10 +122,11 @@
                 }
             }
         }
-    }    
-    main{
+    }   
+    
+    // MAIN INDEX
+    .contenedorGrid{
         padding-top: 0%;
-        // Imagen de fondo he icono que desliza para abajo
         .contenedorResponsive{
             display: flex;
             height: auto;
@@ -90,6 +138,152 @@
             display: none;
         }
     }
+
+    // MAIN NOSOTROS
+    .contenedorGridNosotros{
+        .recuadroPadreUno{
+            justify-content: center;
+            #imagen-uno{
+                display: none;
+            }
+            .recuadroTexto{
+                background-color: rgb(255, 248, 236) ;
+                border: 0.5px solid rgb(155, 155, 155);
+                width: 60%;
+                height: auto;
+                padding: 10px 55px 10px 55px;
+                box-shadow: 1px 1px 5px 0px;
+                font-size: 148%;
+                line-height: 105%;
+                font-style: normal;
+                margin-right: 10%;
+                margin-top: 5%;
+                
+            }
+        }
+        .recuadroPadreDos{
+            #imagen-dos{
+                display: none;
+            }
+            .recuadroTextoDos{
+                background-color: rgb(255, 248, 236) ;
+                border: 0.5px solid rgb(155, 155, 155);
+                width: 60%;
+                height: auto;
+                padding: 10px 55px 10px 55px;
+                box-shadow: 1px 1px 5px 0px;
+                font-size: 148%;
+                line-height: 105%;
+                font-style: normal;
+                margin-top: 4%;
+            }
+        }
+    } 
+    
+    // MAIN PRODUCTOS
+    .contenedorGridProductos{
+        main{
+            .sectionProd{
+                .recuadroBlanco{
+                    display: flex;
+                   justify-content: center;
+                   background-color: white;
+                   width: 95%;
+                   margin-bottom: 20px;
+                   box-shadow: 2px 2px 6px 0px black;
+                   .envioSeguridad{
+                       width: 100%;
+                       display: flex;
+                       justify-content: space-between;
+                       padding-right: 10%;
+                       margin-left: 3%;
+                       p{
+                           width: 100%;
+                           padding-top: 34px;
+                           font-style: italic;
+                           color: rgb(61, 61, 61);
+                       }
+                   }
+               }
+            }
+        }
+        // SECTION PRODUCTOS  
+            // Iconos tienda CANNABIS ACEITES SEMILLAS
+        section{
+            .sectionProductos{
+                .lineaExterna{
+                    div{
+                        .iconosTienda{
+                            display: flex;
+                            justify-content: space-between;
+                            padding-top: 10px;
+                            padding-left: 0.8%;
+                            img{
+                                width: 97%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //MAIN COMUNIDAD
+    .contenedorGridComunidad{
+        .cannabisExporta{
+            background: rgb(199, 197, 197);
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            padding-top: 50px;
+            img{
+                width: 20rem;
+                height: 15rem;
+                align-self: center;
+                padding-left: 1%;
+                padding-bottom: 2%;
+            }
+            .textoNoticia{
+                h3{
+                    color: rgb(66, 66, 66);
+                    font-size: 160%;
+                    text-decoration-line: underline;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    padding: 10px 30px 0px 30px;
+                    font-size: 100%;
+                }
+            }
+            
+        }
+    
+    
+        #tituloSeccionVideos{
+            .videoTexto{
+                width: 100%;
+                flex-wrap: wrap;
+            } 
+        }
+    }
+
+    // FOOTER CONTACTO
+    .contenedorGridContacto{
+        footer{
+            .footerDiv{
+                padding: 1% 0% 1% 0%;
+                display: flex;
+                flex-direction: column;
+                .logosRedesResponsive{
+                    padding-bottom: 1%;
+                }
+            }   
+        }
+        
+    }
+        
+          
     footer{
         // Icono de wathsapp con posicion FIXED
         .botonWsp{
@@ -100,6 +294,18 @@
             .logosRedes{
                 display: none;
             }
+            .logosRedesResponsive{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 5%;
+                gap: 5%;
+                a{
+                    img{
+                        border: 1px solid $color-borde-iconos;
+                    }
+                }
+            }
             .logosRedesResponsiveDesktop{
                 display: none;
             }
@@ -109,12 +315,26 @@
             }
         }
     } 
+}
+        
+            
+            
+        
+    
+            
+            
+        
         
 
-}
+        
+        
+
+        
+    
+        
 
 /*Media queries para celulares y pantallas pequeñas*/
-@media  (min-width: 480px) and (max-width: 600px ){
+@media  (min-width: 481px) and (max-width: 600px ){
     header{
         .tituloResponsive{
             display: grid;
@@ -159,7 +379,9 @@
             display: none;
         }
     }
-    main{
+
+    // MAIN INDEX
+    .contenedorGrid{
         .contenedorResponsive{
             display: flex;
             height: auto;
@@ -171,7 +393,197 @@
             }
         }
     }
+
+    // MAIN NOSOTROS
+    .contenedorGridNosotros{
+        .bloqueMainNosotros{
+            .quienesSomos{
+                font-size: 55px;
+            }
+        }
+        .recuadroPadreUno{
+            #imagen-uno{
+                display: none;
+            }
+            .recuadroTexto{
+                background-color: rgb(255, 248, 236) ;
+                border: 0.5px solid rgb(155, 155, 155);
+                width: 60%;
+                height: auto;
+                padding: 10px 55px 10px 55px;
+                box-shadow: 1px 1px 5px 0px;
+                font-size: 148%;
+                line-height: 105%;
+                font-style: normal;
+                margin-top: 5%;
+                margin-right: 5%;
+                h2{
+                    text-align: center;
+                }
+                
+            }
+        }
+        .recuadroPadreDos{
+            #imagen-dos{
+                display: none;
+            }
+            .recuadroTextoDos{
+                background-color: rgb(255, 248, 236) ;
+                border: 0.5px solid rgb(155, 155, 155);
+                width: 60%;
+                height: auto;
+                padding: 10px 55px 10px 55px;
+                box-shadow: 1px 1px 5px 0px;
+                font-size: 148%;
+                line-height: 105%;
+                font-style: normal;
+                margin-top: 4%;
+                margin-left: 10%;
+                h2{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // MAIN PRODUCTOS
+    .contenedorGridProductos{
+        main{
+            .sectionProd{
+                .parrafoSectionProd{
+                    font-size: 2rem;
+                }
+                .recuadroBlanco{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    background-color: white;
+                    width: 30%;
+                    margin-bottom: 20px;
+                    box-shadow: 2px 2px 6px 0px black;
+                    .envioSeguridad{
+                        width: 71%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin-right: 1%;
+                        p{
+                            width: 100%;
+                            padding-top: 1%;
+                            margin-left: 21%;
+                            text-align: start;
+                            font-style: italic;
+                            color: rgb(61, 61, 61);
+                        }
+                    }
+                }
+            }
+            
+        }
+        // SECTION PRODUCTOS  
+        //  Iconos tienda CANNABIS ACEITES SEMILLAS
+        section{
+            .sectionProductos{
+                .lineaExterna{
+                    div{
+                        .iconosTienda{
+                            display: flex;
+                            justify-content: space-between;
+                            padding-top: 10px;
+                            padding-left: 3%;
+                            img{
+                                width: 90%;
+                            }
+                        }
+                    }
+                    .productosTienda{
+                        .imagenProd{
+                            .imgProducto{
+                                margin-left: 2% ;
+                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // MAIN COMUNIDAD
+    .contenedorGridComunidad{
+        // Bloque con bienvenidas
+        main{
+            .sectionProd{
+                .parrafoSectionComu{
+                    font-size: 2rem;
+                }
+            }
+        }
+        section{
+            .tituloSeccion{
+                .cannabisExporta{
+                    background: rgb(199, 197, 197);
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 50px;
+                    img{
+                        width: 20rem;
+                        height: 15rem;
+                        align-self: center;
+                        padding-left: 1%;
+                        padding-bottom: 2%;
+                    }
+                    h3{
+                        color: rgb(66, 66, 66);
+                        font-size: 160%;
+                        text-decoration-line: underline;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                        padding: 10px 30px 0px 30px;
+                        font-size: 100%;
+                    }
+                
+                }
+                .tabla{
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 1%;
+                }
+                .videoTexto{
+                    justify-content: center;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    div{
+                        width: 100%;
+                        flex-wrap: wrap;
+                    }
+                    iframe{
+                        width: 93%;
+                        margin: 3%;
+                    }
+                }
+            }
+        }
+        
+    }
     
+    // FOOTER CONTACTO
+    .contenedorGridContacto{
+        footer{
+            .footerDiv{
+                flex-direction: column;
+                .logosRedesResponsive{
+                    padding-bottom: 2%;
+                }
+                
+            }
+        }
+    }
+        
+
     footer{
         .btn-wsp{
             display: none;
@@ -189,6 +601,11 @@
                 justify-content: center;
                 padding-bottom: 5%;
                 gap: 2%;
+                a{
+                    img{
+                        border: 1px solid $color-borde-iconos;
+                    }
+                }
             }
             .logosRedesResponsiveDesktop{
                 display: none;
@@ -248,10 +665,11 @@
             display: none;
         }
     }
-    
-    main{
+
+    // MAIN INDEX
+    .contenedorGrid{
         .contenedorResponsive{
-            display: flex;
+            display: flex;    
             height: auto;
             flex-direction: column;
             justify-content: center;
@@ -260,8 +678,205 @@
                 display: none;
             }
         }
-    
     }
+        
+                
+    // MAIN NOSOTROS
+    .contenedorGridNosotros{
+        .bloqueMainNosotros{
+            .quienesSomos{
+                font-size: 40px;
+            }
+        }
+        .recuadroPadreUno{
+            padding: 2% 2% 2% 2%;
+            #imagen-uno{
+                display: none;
+            }
+            .recuadroTexto {
+                background-color: rgb(255, 248, 236) ;
+                border: 0.5px solid rgb(155, 155, 155);
+                width: 95%;
+                height: 100%;
+                padding: 10px 55px 10px 55px;
+                box-shadow: 1px 1px 5px 0px;
+                font-size: 148%;
+                line-height: 105%;
+                font-style: normal;
+            }
+        }
+        .recuadroPadreDos{
+            padding: 2% 2% 2% 2%;
+            #imagen-dos{
+                display: none;
+            }
+            .recuadroTextoDos {
+                background-color: rgb(255, 248, 236) ;
+                border: 0.5px solid rgb(155, 155, 155);
+                width: 95%;
+                height: auto;
+                padding: 10px 55px 10px 55px;
+                box-shadow: 1px 1px 5px 0px;
+                font-size: 148%;
+                line-height: 105%;
+                font-style: normal;
+                margin-top: 10%;
+            }
+        }
+    }
+
+    // MAIN PRODUCTOS
+    .contenedorGridProductos{
+        main{
+            .sectionProd{
+                .parrafoSectionProd{
+                    font-size: 2rem;
+                }
+                .recuadroBlanco{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    background-color: white;
+                    width: 47%;
+                    margin-bottom: 20px;
+                    box-shadow: 2px 2px 6px 0px black;
+                }
+                .envioSeguridad{
+                    width: 71%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-right: 1%;
+                    p{
+                        width: 100%;
+                        padding-top: 1%;
+                        margin-left: 21%;
+                        text-align: start;
+                        font-style: italic;
+                        color: rgb(61, 61, 61);
+                    }
+                }   
+            }
+        }
+        // SECTION PRODUCTOS 
+        section{
+            .sectionProductos{
+                .lineaExterna{
+                    div{
+                        // Iconos tienda CANNABIS ACEITES SEMILLAS 
+                        .iconosTienda{
+                            display: flex;
+                            justify-content: space-between;
+                            padding-top: 10px;
+                            padding-left: 3%;
+                            img{
+                                width: 90%;
+                            }
+                        }
+                    }
+                    .productosTienda{
+                        .imagenProd{
+                            .imgProducto{
+                                width: 80%;
+                                margin-left: 10%;    
+                            }
+                            p{
+                                font-size: 75%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // MAIN COMUNIDAD
+    .contenedorGridComunidad{
+        main{
+            .sectionProd{
+                .parrafoSectionComu{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        section{
+            .tituloSeccion{
+                h2{
+                    font-size: 2rem;
+                }
+                .cannabisExporta{
+                    background: rgb(199, 197, 197);
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 50px;
+                    img{
+                        width: 20rem;
+                        height: 15rem;
+                        align-self: center;
+                        padding-left: 1%;
+                        padding-bottom: 2%;
+                    }
+                    .textoNoticia{
+                        h3{
+                            color: rgb(66, 66, 66);
+                            font-size: 160%;
+                            text-decoration-line: underline;
+                            text-align: center;
+                        }
+                        p{
+                            text-align: center;
+                            padding: 10px 30px 0px 30px;
+                            font-size: 100%;
+                        }
+                    }
+                }
+                .tabla{
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 1%;
+                }
+                .videoTexto{
+                    justify-content: center;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    div{
+                        width: 100%;
+                        flex-wrap: wrap;
+                        h6{
+                            font-size: 1.3rem;
+                        }
+                    }
+                    iframe{
+                        width: 93%;
+                        margin: 3%;
+                    }
+                }
+            }
+        }
+    }
+     
+    // FOOTER CONTACTO
+    .contenedorGridContacto{
+        main{
+            .redesContacto{
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        footer{
+            .footerDiv{
+                flex-direction: column;
+                .logosRedesResponsive{
+                    padding-bottom: 2%;
+                } 
+            }
+        }
+    }
+    
     footer{
         .btn-wsp{
             display: none;
@@ -288,6 +903,11 @@
                 justify-content: center;
                 padding-bottom: 5%;
                 gap: 5%;
+                a{
+                    img{
+                        border: 1px solid $color-borde-iconos;
+                    }
+                }
             }
         
             .logosRedesResponsiveDesktop{
