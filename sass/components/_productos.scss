@@ -1,10 +1,10 @@
-@import "../components/variables";
+@import "../base/variables";
+@import "../base/operaciones";
+@import "../base/mapas";
 
 // PAGINA NOSOTROS
 .contenedorGridProductos{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
+    @extend %contenedorGridGeneral;
     grid-template-areas: "header"
                          "main"
                          "section"
@@ -16,14 +16,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            height: auto;
+            @include tamaño(100%, auto);
             background-color: #ffffff;
             background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
             .parrafoSectionProd{
                 width: 90%;
                 font-style: italic;
-                font-size: 60px;
+                font-size: $tamaño-letra-principal - 40px;
                 margin: 30px 50px;
                 text-shadow: 0px 20px 10px 10px black;
             }
@@ -32,8 +31,7 @@
                 display: flex;
                 justify-content: center;
                 background-color: white;
-                width: 60%;
-                height: 1%;
+                @include tamaño(60%, 1%);
                 margin-bottom: 20px;
                 box-shadow: 2px 2px 6px 0px black;
                 .envioSeguridad{
@@ -57,8 +55,7 @@
     section{
         // Sección de productos
         .sectionProductos{
-            width: 100%;
-            height: auto;
+            @include tamaño(100%, auto);
             // Linea que recuadra el contenido de productos
             .lineaExterna{
                 width: auto;
@@ -71,8 +68,8 @@
                     justify-content: space-evenly;
                     padding-top: 10px;
                     img{
-                        border: 1px solid $color-borde-iconos;
-                        box-shadow: 2px 2px 4px 0px black;
+                        border: map-get($map: $botonVioleta, $key:border-botonVioleta);
+                        box-shadow: map-get($map: $botonVioleta, $key:box-shadow-botonVioleta);
                         &:hover{
                             transform: scale(1.1);
                             transition: calc(0.3s);

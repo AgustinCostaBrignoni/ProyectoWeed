@@ -1,0 +1,7 @@
+/* extends*/
+// Lo utilizo en todas las paginas dentro del contenedorGrid
+%contenedorGridGeneral{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+}

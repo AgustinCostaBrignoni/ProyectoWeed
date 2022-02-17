@@ -561,8 +561,9 @@
                         flex-wrap: wrap;
                     }
                     iframe{
-                        width: 93%;
-                        margin: 3%;
+                        width: 96%;
+                        margin: 2%;
+                        border: 1px solid $color-borde-iconos;    
                     }
                 }
             }
@@ -850,8 +851,9 @@
                         }
                     }
                     iframe{
-                        width: 93%;
-                        margin: 3%;
+                        width: 96%;
+                        margin: 2%;
+                        border: 1px solid $color-borde-iconos;   
                     }
                 }
             }

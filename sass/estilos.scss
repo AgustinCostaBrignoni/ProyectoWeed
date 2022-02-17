@@ -6,16 +6,20 @@
 
 }
 
-// Variables 
+
 /*Variables*/
-@import "components/variables";
+@import "base/operaciones";
+@import "base/variables";
+@import "base/mapas";
+@import "base/extends";
+@import "base/mixin";
 // Estilos generales
-@import "base/header";
-@import "base/footer";
-@import "base/index";
-@import "base/nosotros";
-@import "base/productos";
-@import "base/comunidad";
-@import "base/contacto";
+@import "components/header";
+@import "components/footer";
+@import "components/index";
+@import "components/nosotros";
+@import "components/productos";
+@import "components/comunidad";
+@import "components/contacto";
 /*MediaQueries*/
-@import "components/mediaqueries";
+@import "base/mediaqueries";

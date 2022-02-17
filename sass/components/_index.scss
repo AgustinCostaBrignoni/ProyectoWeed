@@ -1,9 +1,8 @@
-@import "../components/variables";
+@import "../base/variables";
+@import "../base/operaciones";
 /*PAGINA INDEX*/
 .contenedorGrid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
+    @extend %contenedorGridGeneral;
     grid-template-areas: "header"
                          "main"
                          "footer";
@@ -30,8 +29,13 @@
                     transform: scale(1.05);
                     transition: transform 0.2s;
                 }
+                h3{
+                    font-size: 20px;
+                    padding-left: 5%;
+                }
                 h4{
-                    padding-left: 5% ;
+                    font-size: 20px;
+                    padding-left: 5%;
                 }
             }
         }
@@ -48,7 +52,7 @@
                     justify-content: center;
                     width: 90%;
                     font-style: italic;
-                    font-size: 60px;
+                    font-size: $tamaño-letra-principal - 40px;
                     margin: 1% 7%;
                     text-shadow: 0px 20px 10px 10px black;
                 }
@@ -75,7 +79,7 @@
                         .iconoDes{
                             border-radius: 3px 10px;
                             padding-top: 3%;
-                            h6{
+                            h5{
                                 font-size: 28px;
                                 text-align: center;
                             }
@@ -89,4 +93,8 @@
     }
 
 }
+        
+        
+        
+           
         

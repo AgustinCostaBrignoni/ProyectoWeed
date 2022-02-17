@@ -5,6 +5,13 @@
   font-family: 'Roboto', sans-serif; }
 
 /*Variables*/
+/* extends*/
+.contenedorGrid, .contenedorGridNosotros, .contenedorGridProductos, .contenedorGridComunidad, .contenedorGridContacto {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%; }
+
+/*Mixin*/
 header {
   grid-area: header; }
   header .navegacion {
@@ -98,7 +105,7 @@ footer {
     padding-bottom: 30px;
     flex-direction: column;
     background-color: #1d1d1d; }
-    footer .socios h5 {
+    footer .socios h6 {
       color: whitesmoke;
       padding-bottom: 1%;
       font-size: 20px;
@@ -131,9 +138,6 @@ footer {
 
 /*PAGINA INDEX*/
 .contenedorGrid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-areas: "header" "main" "footer";
   /*Main*/ }
   .contenedorGrid main {
@@ -155,7 +159,11 @@ footer {
         .contenedorGrid main .contenedorResponsive .iconoDesplegable:hover {
           transform: scale(1.05);
           transition: transform 0.2s; }
+        .contenedorGrid main .contenedorResponsive .iconoDesplegable h3 {
+          font-size: 20px;
+          padding-left: 5%; }
         .contenedorGrid main .contenedorResponsive .iconoDesplegable h4 {
+          font-size: 20px;
           padding-left: 5%; }
     .contenedorGrid main .section {
       display: flex;
@@ -191,15 +199,12 @@ footer {
           .contenedorGrid main .section .galeriaSection .cuadros .cuadroUnoContenedor .iconoDes {
             border-radius: 3px 10px;
             padding-top: 3%; }
-            .contenedorGrid main .section .galeriaSection .cuadros .cuadroUnoContenedor .iconoDes h6 {
+            .contenedorGrid main .section .galeriaSection .cuadros .cuadroUnoContenedor .iconoDes h5 {
               font-size: 28px;
               text-align: center; }
 
 /*PAGINA NOSOTROS*/
 .contenedorGridNosotros {
-  display: grid;
-  grid-template-columns: 100%;
-  width: 100%;
   grid-template-areas: "header" "main" "footer";
   /*Main*/ }
   .contenedorGridNosotros main {
@@ -212,7 +217,7 @@ footer {
       height: 100px;
       box-shadow: 1px 1px 2px 0px black;
       background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
-      .contenedorGridNosotros main .bloqueMainNosotros h2 {
+      .contenedorGridNosotros main .bloqueMainNosotros h3 {
         padding-top: 25px;
         font-style: italic;
         font-size: 60px;
@@ -232,6 +237,8 @@ footer {
         top: 35%; }
         .contenedorGridNosotros main .recuadroPadreUno #imagen-uno img {
           border: 1px solid #181818; }
+      .contenedorGridNosotros main .recuadroPadreUno .recuadroTexto h4 {
+        font-size: 25px; }
     .contenedorGridNosotros main .recuadroPadreDos {
       width: 100%;
       height: auto;
@@ -246,11 +253,10 @@ footer {
         left: 5%; }
         .contenedorGridNosotros main .recuadroPadreDos #imagen-dos img {
           border: 1px solid #181818; }
+      .contenedorGridNosotros main .recuadroPadreDos .recuadroTextoDos h5 {
+        font-size: 25px; }
 
 .contenedorGridProductos {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-areas: "header" "main" "section" "footer"; }
   .contenedorGridProductos main {
     grid-area: main; }
@@ -300,7 +306,7 @@ footer {
         justify-content: space-evenly;
         padding-top: 10px; }
         .contenedorGridProductos section .sectionProductos .lineaExterna .iconosTienda img {
-          border: 1px solid #181818;
+          border: 1px solid #8f376a;
           box-shadow: 2px 2px 4px 0px black; }
           .contenedorGridProductos section .sectionProductos .lineaExterna .iconosTienda img:hover {
             transform: scale(1.1);
@@ -330,9 +336,6 @@ footer {
             color: #9c2758; }
 
 .contenedorGridComunidad {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-areas: "header" "main" "section" "footer"; }
   .contenedorGridComunidad main .sectionProd {
     display: flex;
@@ -345,12 +348,17 @@ footer {
     .contenedorGridComunidad main .sectionProd .parrafoSectionComu {
       width: 90%;
       font-style: italic;
-      font-size: 40px;
+      font-size: 45px;
       margin: 30px 50px;
       text-shadow: 0px 20px 10px 10px black; }
   .contenedorGridComunidad section {
     grid-area: section; }
-    .contenedorGridComunidad section .tituloSeccion h2 {
+    .contenedorGridComunidad section .tituloSeccion h3 {
+      font-weight: 400;
+      font-size: 45px;
+      margin-left: 1%;
+      text-align: center; }
+    .contenedorGridComunidad section .tituloSeccion h5 {
       font-weight: 400;
       font-size: 45px;
       margin-left: 1%;
@@ -367,7 +375,7 @@ footer {
         height: 15rem;
         padding-left: 1%;
         padding-bottom: 2%; }
-      .contenedorGridComunidad section .tituloSeccion .cannabisExporta .textoNoticia h3 {
+      .contenedorGridComunidad section .tituloSeccion .cannabisExporta .textoNoticia h4 {
         color: #424242;
         font-size: 160%;
         text-decoration-line: underline;
@@ -384,9 +392,11 @@ footer {
       display: flex;
       justify-content: start;
       gap: 15px; }
-      .contenedorGridComunidad section .tituloSeccion .tabla h3 {
-        font-size: 35px;
-        margin-left: 1%; }
+      .contenedorGridComunidad section .tituloSeccion .tabla h5 {
+        font-weight: 400;
+        font-size: 30px;
+        margin-left: 1%;
+        text-align: center; }
       .contenedorGridComunidad section .tituloSeccion .tabla p {
         padding-top: 20px; }
       .contenedorGridComunidad section .tituloSeccion .tabla table {
@@ -404,17 +414,15 @@ footer {
       gap: 15px;
       padding-top: 20px;
       padding-bottom: 20px; }
-      .contenedorGridComunidad section .tituloSeccion .videoTexto div h6 {
-        text-align: center;
-        width: auto;
-        font-size: 25px; }
+      .contenedorGridComunidad section .tituloSeccion .videoTexto div h5 {
+        font-weight: 400;
+        font-size: 45px;
+        margin-left: 1%;
+        text-align: center; }
       .contenedorGridComunidad section .tituloSeccion .videoTexto div iframe {
         border: 1px solid #181818; }
 
 .contenedorGridContacto {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-areas: "header" "main" "footer"; }
   .contenedorGridContacto main {
     grid-area: main; }
@@ -423,15 +431,19 @@ footer {
       flex-direction: column;
       align-items: center;
       font-weight: 100;
-      font-size: 1.5rem;
       gap: 15px;
       display: flex;
       background-color: #ffffff;
       background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
-      .contenedorGridContacto main .redesContacto h2 {
-        margin-top: 3%; }
+      .contenedorGridContacto main .redesContacto h3 {
+        margin-top: 3%;
+        font-size: 35px; }
       .contenedorGridContacto main .redesContacto a img {
         border: 1px solid black; }
+      .contenedorGridContacto main .redesContacto h4 {
+        font-size: 20px; }
+      .contenedorGridContacto main .redesContacto h5 {
+        font-size: 20px; }
     .contenedorGridContacto main form {
       padding: 0% 1% 0% 1%; }
       .contenedorGridContacto main form .formulario {
@@ -803,8 +815,9 @@ footer {
       width: 100%;
       flex-wrap: wrap; }
     .contenedorGridComunidad section .tituloSeccion .videoTexto iframe {
-      width: 93%;
-      margin: 3%; }
+      width: 96%;
+      margin: 2%;
+      border: 1px solid #181818; }
   .contenedorGridContacto footer .footerDiv {
     flex-direction: column; }
     .contenedorGridContacto footer .footerDiv .logosRedesResponsive {
@@ -973,8 +986,9 @@ footer {
       .contenedorGridComunidad section .tituloSeccion .videoTexto div h6 {
         font-size: 1.3rem; }
     .contenedorGridComunidad section .tituloSeccion .videoTexto iframe {
-      width: 93%;
-      margin: 3%; }
+      width: 96%;
+      margin: 2%;
+      border: 1px solid #181818; }
   .contenedorGridContacto main .redesContacto p {
     font-size: 1.3rem; }
   .contenedorGridContacto footer .footerDiv {

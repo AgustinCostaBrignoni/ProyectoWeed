@@ -1,10 +1,9 @@
-@import "../components/variables";
+@import "../base/variables";
+@import "../base/operaciones";
 
 // PAGINA COMUNIDAD
 .contenedorGridComunidad{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
+    @extend %contenedorGridGeneral;
     grid-template-areas: "header"
                          "main"
                          "section"
@@ -23,7 +22,7 @@
             .parrafoSectionComu {
                 width: 90%;
                 font-style: italic;
-                font-size: 40px;
+                font-size: $tamaño-letra-principal - 55px;
                 margin: 30px 50px;
                 text-shadow: 0px 20px 10px 10px black;
             }
@@ -34,7 +33,13 @@
         grid-area: section;
         // Seccion Noticias
         .tituloSeccion{
-            h2{
+            h3{
+                font-weight: 400;
+                font-size: 45px;
+                margin-left: 1%;
+                text-align: center;
+            }
+            h5{
                 font-weight: 400;
                 font-size: 45px;
                 margin-left: 1%;
@@ -54,7 +59,7 @@
                     padding-bottom: 2%;
                 }
                 .textoNoticia{
-                    h3{
+                    h4{
                         color: rgb(66, 66, 66);
                         font-size: 160%;
                         text-decoration-line: underline;
@@ -80,10 +85,11 @@
                 display: flex;
                 justify-content: start;
                 gap: 15px;
-                h3{
-                    font-size: 35px;
+                h5{
+                    font-weight: 400;
+                    font-size: 30px;
                     margin-left: 1%;
-                    
+                    text-align: center;
                 }
                 p{
                     padding-top: 20px;
@@ -112,10 +118,11 @@
                 padding-top: 20px;
                 padding-bottom: 20px;
                 div{
-                    h6{
+                    h5{
+                        font-weight: 400;
+                        font-size: 45px;
+                        margin-left: 1%;
                         text-align: center;
-                        width: auto;
-                        font-size: 25px;
                     }
                     iframe{
                         border: 1px solid $color-borde-iconos;
@@ -126,3 +133,8 @@
         }
     }
 }
+            
+            
+            
+                
+        

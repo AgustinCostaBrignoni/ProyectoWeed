@@ -1,0 +1,7 @@
+/*Mixin*/
+
+// Lo aplico en pagina PRODUCTOS
+@mixin tamaño($width, $heigth){
+    width: $width;
+    height: $heigth;
+}

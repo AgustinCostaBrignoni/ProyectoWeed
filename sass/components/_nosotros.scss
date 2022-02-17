@@ -1,10 +1,9 @@
-@import "../components/variables";
+@import "../base/variables";
+@import "../base/operaciones";
 
 /*PAGINA NOSOTROS*/
 .contenedorGridNosotros{
-    display: grid;
-    grid-template-columns: 100%;
-    width: 100%;
+    @extend %contenedorGridGeneral;
     grid-template-areas: "header"
                          "main"
                          "footer";
@@ -19,10 +18,10 @@
             height: 100px;
             box-shadow: 1px 1px 2px 0px black;
             background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-            h2{
+            h3{
                 padding-top: 25px;
                 font-style: italic;
-                font-size: 60px;
+                font-size: $tamaño-letra-principal - 40px;
                 font-weight: 100;
                 text-shadow: 0px 20px 10px 10px black;
                 text-align: center;
@@ -44,6 +43,11 @@
                     border: 1px solid $color-borde-iconos;
                 }
             } 
+            .recuadroTexto{
+                h4{
+                    font-size: 25px;
+                }
+            }
             
         }
         .recuadroPadreDos {
@@ -60,6 +64,11 @@
                 left: 5%;
                 img{
                     border: 1px solid $color-borde-iconos;
+                }
+            }
+            .recuadroTextoDos{
+                h5{
+                    font-size: 25px;
                 }
             }
            
