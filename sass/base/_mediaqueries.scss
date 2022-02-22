@@ -114,7 +114,7 @@
                 li{
                     a{
                         justify-content: space-around;
-                        color: $color-vino-letras;
+                        color: $color-menu-letras;
                         font-size: 25px;
                         text-decoration: none;
                         transition: 0.4s;
@@ -127,16 +127,19 @@
     // MAIN INDEX
     .contenedorGrid{
         padding-top: 0%;
-        .contenedorResponsive{
-            display: flex;
-            height: auto;
-            flex-direction: column;
-            justify-content: center;
-            background-image: url("../images/fondoMain.jpg");
+        main{
+            .contenedorResponsive{
+                display: flex;
+                height: auto;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url("../images/fondoMain.jpg");
+            }
+            .iconoDesplegable{
+                display: none;
+            }
         }
-        .iconoDesplegable{
-            display: none;
-        }
+        
     }
 
     // MAIN NOSOTROS
@@ -185,10 +188,11 @@
         main{
             .sectionProd{
                 .recuadroBlanco{
-                    display: flex;
+                   display: flex;
+                   flex-wrap: wrap;
                    justify-content: center;
                    background-color: white;
-                   width: 95%;
+                   @include tamaño(98%, auto);
                    margin-bottom: 20px;
                    box-shadow: 2px 2px 6px 0px black;
                    .envioSeguridad{
@@ -196,9 +200,14 @@
                        display: flex;
                        justify-content: space-between;
                        padding-right: 10%;
+                       gap: 4px;
                        margin-left: 3%;
+                       .imagenRecuadro{
+                           @include tamaño (15%, auto);
+                       }
                        p{
                            width: 100%;
+                           font-size: 0.8rem;
                            padding-top: 34px;
                            font-style: italic;
                            color: rgb(61, 61, 61);
@@ -367,7 +376,7 @@
                 li{
                     a{
                         justify-content: space-around;
-                        color: $color-vino-letras;
+                        color: $color-menu-letras;
                         font-size: 25px;
                         text-decoration: none;
                         transition: 0.4s;
@@ -382,14 +391,25 @@
 
     // MAIN INDEX
     .contenedorGrid{
-        .contenedorResponsive{
-            display: flex;
-            height: auto;
-            flex-direction: column;
-            justify-content: center;
-            background-image: url("../images/fondoMain.jpg");
-            .iconoDesplegable{
-                display: none;
+        main{
+            .contenedorResponsive{
+                display: flex;
+                height: auto;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url("../images/fondoMain.jpg");
+                .iconoDesplegable{
+                    display: none;
+                }
+            }
+            .section{
+                .galeriaSection{
+                    .parrafoSection{
+                        p{
+                            font-size: $tamaño-letra-principal - 65px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -398,7 +418,7 @@
     .contenedorGridNosotros{
         .bloqueMainNosotros{
             .quienesSomos{
-                font-size: 55px;
+                font-size: $tamaño-letra-principal - 61px;
             }
         }
         .recuadroPadreUno{
@@ -456,27 +476,26 @@
                 .recuadroBlanco{
                     display: flex;
                     justify-content: center;
-                    flex-wrap: wrap;
+                    flex-direction: row;
                     background-color: white;
-                    width: 30%;
+                    width: 70%;
                     margin-bottom: 20px;
                     box-shadow: 2px 2px 6px 0px black;
-                    .envioSeguridad{
-                        width: 71%;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        margin-right: 1%;
-                        p{
-                            width: 100%;
-                            padding-top: 1%;
-                            margin-left: 21%;
-                            text-align: start;
-                            font-style: italic;
-                            color: rgb(61, 61, 61);
-                        }
-                    }
                 }
+                .envioSeguridad{
+                    width: 80%;
+                    flex-wrap: wrap;
+                    p{
+                        width: 25%;
+                        padding-top: 1%;
+                        font-style: italic;
+                        color: rgb(61, 61, 61);
+                    }
+                    .imagenRecuadro{
+                        width: 45%;
+                        padding: none;
+                    }
+                }   
             }
             
         }
@@ -530,8 +549,9 @@
                         width: 20rem;
                         height: 15rem;
                         align-self: center;
-                        padding-left: 1%;
-                        padding-bottom: 2%;
+                        padding-left: 0%;
+                        padding-bottom: 0%;
+                        
                     }
                     h3{
                         color: rgb(66, 66, 66);
@@ -669,16 +689,38 @@
 
     // MAIN INDEX
     .contenedorGrid{
-        .contenedorResponsive{
-            display: flex;    
-            height: auto;
-            flex-direction: column;
-            justify-content: center;
-            background-image: url("../images/fondoMain.jpg");
-            .iconoDesplegable{
-                display: none;
+        main{
+            .contenedorResponsive{
+                display: flex;    
+                height: auto;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url("../images/fondoMain.jpg");
+                .iconoDesplegable{
+                    display: none;
+                }   
+            }
+            .section{
+                .galeriaSection{
+                    .parrafoSection{
+                        p{
+                            font-size: $tamaño-letra-principal - 75px;
+                        }
+                    }
+                    .cuadros{
+                        flex-wrap: wrap;
+                        .cuadroUnoContenedor{
+                            .iconoDes{
+                                h5{
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
+        
     }
         
                 
@@ -686,7 +728,10 @@
     .contenedorGridNosotros{
         .bloqueMainNosotros{
             .quienesSomos{
-                font-size: 40px;
+                font-size: $tamaño-letra-principal - 61px;
+                margin-top: 5%;
+                margin-left: 3%;
+                text-align: center;
             }
         }
         .recuadroPadreUno{
@@ -736,25 +781,24 @@
                 .recuadroBlanco{
                     display: flex;
                     justify-content: center;
-                    flex-wrap: wrap;
+                    flex-direction: row;
                     background-color: white;
-                    width: 47%;
+                    width: 80%;
                     margin-bottom: 20px;
                     box-shadow: 2px 2px 6px 0px black;
                 }
                 .envioSeguridad{
-                    width: 71%;
-                    display: flex;
+                    width: 100%;
                     flex-wrap: wrap;
-                    justify-content: space-between;
-                    margin-right: 1%;
                     p{
-                        width: 100%;
+                        width: 30%;
                         padding-top: 1%;
-                        margin-left: 21%;
-                        text-align: start;
+                        
                         font-style: italic;
                         color: rgb(61, 61, 61);
+                    }
+                    .imagenRecuadro{
+                        padding: none;
                     }
                 }   
             }
@@ -783,6 +827,9 @@
                             }
                             p{
                                 font-size: 75%;
+                            }
+                            .imgAgregarCarrito{
+                                margin-left: 29%;
                             }
                         }
                     }
@@ -816,8 +863,9 @@
                         width: 20rem;
                         height: 15rem;
                         align-self: center;
-                        padding-left: 1%;
-                        padding-bottom: 2%;
+                        padding-left: 0%;
+                        padding-bottom: 0%;
+                        margin: 0%;
                     }
                     .textoNoticia{
                         h3{

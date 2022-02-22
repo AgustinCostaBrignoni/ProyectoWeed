@@ -9,7 +9,7 @@ header{
         justify-content: space-around;
         background-color: $color-menu-fondo;
         z-index: 1;
-        box-shadow: 5px 1px 5px 1px black;
+        box-shadow: 5px 1px 3px 1px black;
         ul {
             display: flex;
             justify-content: space-between;
@@ -21,7 +21,7 @@ header{
             display: flex;
             align-items: center;
             text-decoration-style: none;
-            color: $color-vino-letras;
+            color: $color-menu-letras;
             font-size: 59px;
         }
         .menu{
@@ -36,12 +36,12 @@ header{
             
             a {
                 justify-content: space-around;
-                color: $color-vino-letras;
+                color: $color-menu-letras;
                 font-size: 25px;
                 text-decoration: none;
                 transition: 0.4s;
                 &:hover {
-                    background-color: $color-vino-letras;
+                    background-color: $color-menu-letras; 
                     color: $color-menu-fondo;
                     transition: 1s;
                 } 
@@ -55,7 +55,7 @@ header{
                 flex-direction: column;
                 display: none;
                 &:hover{
-                    background-color: $color-vino-letras;
+                    background-color: $color-menu-letras;
                     display: block;
                     display: flex;
                     align-items: start; 
@@ -63,7 +63,7 @@ header{
             }
 
             li:hover ul {
-                background-color: $color-vino-letras;
+                background-color: $color-menu-letras;
                 display: block;
                 display: flex;
                 align-items: start;
