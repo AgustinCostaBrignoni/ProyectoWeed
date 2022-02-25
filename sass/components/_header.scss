@@ -40,10 +40,11 @@ header{
                 font-size: 25px;
                 text-decoration: none;
                 transition: 0.4s;
+                border-radius: 5px 0px 5px 5px;
                 &:hover {
-                    background-color: $color-menu-letras; 
+                    background-color: $color-menu-letras;
                     color: $color-menu-fondo;
-                    transition: 1s;
+                    transition: 0.1s;
                 } 
             }
 
@@ -53,6 +54,7 @@ header{
                 max-width: 120%;
                 max-height: 250%;
                 flex-direction: column;
+                border-radius: 5px;
                 display: none;
                 &:hover{
                     background-color: $color-menu-letras;
@@ -70,9 +72,9 @@ header{
             }
             
             .subMenu{
+                border: 1px solid $color-menu-fondo;
                 a {
-                    display: flex;
-                    display: block;
+                    border: none;
                     color: $color-menu-fondo;
                     font-size: 19px;
                     text-decoration: none;

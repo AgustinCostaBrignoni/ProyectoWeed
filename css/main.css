@@ -45,17 +45,19 @@ header {
       color: #E5E3C9;
       font-size: 25px;
       text-decoration: none;
-      transition: 0.4s; }
+      transition: 0.4s;
+      border-radius: 5px 0px 5px 5px; }
       header .navegacion .menu a:hover {
         background-color: #E5E3C9;
         color: #3d4b43;
-        transition: 1s; }
+        transition: 0.1s; }
     header .navegacion .menu ul {
       position: absolute;
       display: flex;
       max-width: 120%;
       max-height: 250%;
       flex-direction: column;
+      border-radius: 5px;
       display: none; }
       header .navegacion .menu ul:hover {
         background-color: #E5E3C9;
@@ -67,12 +69,13 @@ header {
       display: block;
       display: flex;
       align-items: start; }
-    header .navegacion .menu .subMenu a {
-      display: flex;
-      display: block;
-      color: #3d4b43;
-      font-size: 19px;
-      text-decoration: none; }
+    header .navegacion .menu .subMenu {
+      border: 1px solid #3d4b43; }
+      header .navegacion .menu .subMenu a {
+        border: none;
+        color: #3d4b43;
+        font-size: 19px;
+        text-decoration: none; }
     header .navegacion .imgCarrito {
       width: 30%;
       padding-top: 10%; }
