@@ -52,7 +52,7 @@ footer{
     // apartado para los logos de redes sociales
     .footerDivIndex{
         display: grid;
-        grid-template-columns: 10% 90%;
+        grid-template-columns: 10% 80% 10%;
         background-color: rgb(37, 37, 37);
         .logosRedesResponsiveDesktop{
             padding-top: 40%;
@@ -68,7 +68,7 @@ footer{
             align-items: center;
             color: rgb(136, 136, 136);
             font-size: 20px;
-            padding: 0% 2%;
+            margin-top: 30px;
             .footContact {
                 color: white;
             }

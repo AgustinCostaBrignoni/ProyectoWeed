@@ -19,151 +19,152 @@
     <title>Inicio-WeedKings</title>
 </head>
 
-<body>
-    <!-- Etiqueta grid contenedora -->
-    <div class="contenedorGridContacto">
-        <header>
-            <!-- Titulo responsive para pantallas pequeñas -->
-            <div class="tituloResponsive">
-                <div class="titUno">
-                    <h1><a href="../index.html" style='text-decoration:none;color:#E5E3C9;'> WeedKings </a></h1>
-                </div>
-                <div class="titDos">
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
-                </div>
+<!-- Etiqueta grid contenedora -->
+<body class="contenedorGridContacto">
+    <header>
+        <!-- Titulo responsive para pantallas pequeñas -->
+        <div class="tituloResponsive">
+            <div class="titUno">
+                <h1><a href="../index.html" style='text-decoration:none;color:#E5E3C9;'> WeedKings </a></h1>
             </div>
-            <!-- Menú desplegable para celulares y tablets -->
-            <div class="desplegable">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                    <ul class="menu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                    </div>
-                </div>
-                <nav class="navbar navbar-dark bg-dark">
-                    <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    </div>
-                </nav>
-            </div> 
-            <!-- Menú general para desktop y pantallas grandes en general -->
-            <nav class="navegacion">
-                <h2><a href="../index.html" style='text-decoration:none;color:#E5E3C9;'> WeedKings </a></h2>
+            <div class="titDos">
+                <a href="../pages/productos.html">
+                    <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
+            </div>
+        </div>
+        <!-- Menú desplegable para celulares y tablets -->
+        <div class="desplegable">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
                 <ul class="menu">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../pages/nosotros.html">Nosotros</a></li>
                     <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
-                        <ul class="subMenu">
-                            <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
-                            <li><a href="../pages/comunidad.html#informacion">Información</a></li>
-                            <li><a href="../pages/comunidad.html#videos">Videos</a></li>
-                        </ul>
-                    </li>
+                    <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
                     <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
-                <div>
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 </div>
             </nav>
-        </header>
-
-
-        <main>
-            <!-- Bloque de contacto con iconos grandes -->
-            <div class="redesContacto">
-                <h3>Puedes contactarnos por:</h3>
-                <a href="https://www.instagram.com/?hl=es-la" target="_blank"> <img src="../images/instagram.png" alt="Foto Instagram"></a> <h4>www.instagram.com/WeedKings</h4>
-                <a href="https://www.facebook.com/" target="_blank"> <img src="../images/facebook.png" alt="Foto Facebook"></a> <h5>www.facebook.com/WeedKings</h5>
-            </div>  
-
-            <form>
-                <!-- Formulario de contacto -->
-                <fieldset class="formulario">
-                    <legend> Formulario de contacto</legend>
-                    <div>
-                        <label for="nombre">Escribe tu nombre </label>
-                        <input type="text" name="nombre" required placeholder="tu nombre aquí">
-                    </div>
-                    <div>
-                        <label for="email">Escribe tu email </label>
-                        <input type="email" required placeholder="ej:@gmail">
-                    </div>
-                    <div>
-                        <label for="pais">Selecciona tu pais </label>
-                        <select name="pais">
-                            <option value="uruguay">Uruguay</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="chile">Chile</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="sexo"> Genero: </label><br>
-                        <input class="typeRadio" type="radio" name="sexo" value="mujer"> Mujer
-                        <input class="typeRadio" type="radio" name="sexo" value="hombre"> Hombre
-                        <input class="typeRadio" type="radio" name="sexo" value="otro"> Otro                
-                    </div>
-                    <div>
-                        <label for="check">¿Desea recibir últimas noticias?</label>
-                        <input type="checkbox" name="check">
-                    </div>
-                    <div>
-                        <textarea name="comentarios" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
-                    </div>
-                    <div>
-                        <input class="submit" type="submit" value="Enviar">
-                        <input class="submit" type="reset" value="Resetear">
-                    </div>
-                </fieldset>
-            </form>
-        </main>
-        
-        <footer>
-            <!-- Icono de wathsapp con posicion FIXED -->
+        </div> 
+        <!-- Menú general para desktop y pantallas grandes en general -->
+        <nav class="navegacion">
+            <h2><a href="../index.html" style='text-decoration:none;color:#E5E3C9;'> WeedKings </a></h2>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
+                    <ul class="subMenu">
+                        <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
+                        <li><a href="../pages/comunidad.html#informacion">Información</a></li>
+                        <li><a href="../pages/comunidad.html#videos">Videos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
             <div>
-                <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
+                <a href="../pages/productos.html">
+                    <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
             </div>
-            <!-- Apartado de socios principales -->
-            <div class="socios">
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Bloque de contacto con iconos grandes -->
+        <div class="redesContacto">
+            <h3>Puedes contactarnos por:</h3>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"> <img src="../images/instagram.png" alt="Foto Instagram"></a> <h4>www.instagram.com/WeedKings</h4>
+            <a href="https://www.facebook.com/" target="_blank"> <img src="../images/facebook.png" alt="Foto Facebook"></a> <h5>www.facebook.com/WeedKings</h5>
+        </div>  
+
+        <form action="#">
+            <!-- Formulario de contacto -->
+            <fieldset class="formulario">
+                <legend> Formulario de contacto</legend>
                 <div>
-                    <h6>Socios principales:</h6>
+                    <label for="nombre">Escribe tu nombre </label>
+                    <input type="text" name="nombre" required placeholder="tu nombre aquí">
                 </div>
-                <div class="imagesSocios">
-                    <img src="../images/logo1.png" alt="logo1">
-                    <img src="../images/logo2.png" alt="logo2">
-                    <img src="../images/logo3.png" alt="logo3">
-                    <img src="../images/logo4.png" alt="logo4">
+                <div>
+                    <label for="email">Escribe tu email </label>
+                    <input type="email" required placeholder="ej:@gmail">
                 </div>
+                <div>
+                    <label for="pais">Selecciona tu pais </label>
+                    <select name="pais">
+                        <option value="uruguay">Uruguay</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sexo"> Genero: </label>
+                    <div class="typeRadioDiv">
+                    <input class="typeRadio" type="radio" name="sexo" value="mujer"> Mujer
+                    <input class="typeRadio" type="radio" name="sexo" value="hombre"> Hombre
+                    <input class="typeRadio" type="radio" name="sexo" value="otro"> Otro   
+                    </div>             
+                </div>
+                <div>
+                    <label for="check">¿Desea recibir últimas noticias?</label>
+                    <input type="checkbox" name="check">
+                </div>
+                <div>
+                    <textarea name="comentarios" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
+                </div>
+                <div>
+                    <input class="submit" type="submit" value="Enviar">
+                    <input class="submit" type="reset" value="Resetear">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <!-- Icono de wathsapp con posicion FIXED -->
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
+        </div>
+        <!-- Apartado de socios principales -->
+        <div class="socios">
+            <div>
+                <h6>Socios principales:</h6>
             </div>
-            <!-- apartado para los logos de redes sociales -->
-            <div class="footerDiv">
-                <div class="logosRedesResponsive">
-                    <a href="https://api.whatsapp.com/send?phone=+59895408091" target="_blank"><img src="../images/whatsapp.png"
-                            alt="Wathsapp"></a>
-                </div>
-                <div class="derechos">
-                    
-                    <h6>
-                        © 2022 WeedKings | IndiNati S.A | Todos los derechos reservados | Canelones Uruguay - CP90000
-                    </h6>
-                    <h6>
-                        No vendemos semillas de marihuana a nadie que nos haga pensar que pueden ser cultivadas en países donde no es legal. 
-                        Síguenos en redes sociales para saber en qué países está legalizado el cannabis.
-                    </h6>
-                </div>
+            <div class="imagesSocios">
+                <img src="../images/logo1.png" alt="logo1">
+                <img src="../images/logo2.png" alt="logo2">
+                <img src="../images/logo3.png" alt="logo3">
+                <img src="../images/logo4.png" alt="logo4">
             </div>
-        
-        </footer>
-    </div>
+        </div>
+        <!-- apartado para los logos de redes sociales -->
+        <div class="footerDiv">
+            <div class="logosRedesResponsive">
+                <a href="https://api.whatsapp.com/send?phone=+59895408091" target="_blank"><img src="../images/whatsapp.png"
+                        alt="Wathsapp"></a>
+            </div>
+            <div class="derechos">
+                
+                <h6>
+                    © 2022 WeedKings | IndiNati S.A | Todos los derechos reservados | Canelones Uruguay - CP90000
+                </h6>
+                <h6>
+                    No vendemos semillas de marihuana a nadie que nos haga pensar que pueden ser cultivadas en países donde no es legal. 
+                    Síguenos en redes sociales para saber en qué países está legalizado el cannabis.
+                </h6>
+            </div>
+        </div>
+    
+    </footer>
+    
 </body>
 </html>
                 

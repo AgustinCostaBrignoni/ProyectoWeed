@@ -123,7 +123,7 @@ footer {
         border: 1.5px solid #1b644e; }
   footer .footerDivIndex {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10% 80% 10%;
     background-color: #252525; }
     footer .footerDivIndex .logosRedesResponsiveDesktop {
       padding-top: 40%; }
@@ -135,7 +135,7 @@ footer {
       align-items: center;
       color: #888888;
       font-size: 20px;
-      padding: 0% 2%; }
+      margin-top: 30px; }
       footer .footerDivIndex .derechos .footContact {
         color: white; }
       footer .footerDivIndex .derechos h6 {
@@ -200,6 +200,7 @@ footer {
             padding-left: 15%; }
             .contenedorGrid main .section .galeriaSection .cuadros .cuadroUnoContenedor a img {
               width: 70%;
+              height: auto;
               border: 1px solid #1b644e; }
               .contenedorGrid main .section .galeriaSection .cuadros .cuadroUnoContenedor a img:hover {
                 transform: scale(1.1);
@@ -311,12 +312,14 @@ footer {
       width: auto;
       height: auto;
       border: 1px solid #3f3f3f;
-      margin: 5px 10px 5px 10px; }
+      margin: 5px 10px 60px 10px; }
       .contenedorGridProductos section .sectionProductos .lineaExterna .iconosTienda {
         display: flex;
         justify-content: space-evenly;
         padding-top: 10px; }
         .contenedorGridProductos section .sectionProductos .lineaExterna .iconosTienda img {
+          width: auto;
+          height: auto;
           border: 1px solid #0d3b2e;
           box-shadow: 2px 2px 4px 0px black; }
           .contenedorGridProductos section .sectionProductos .lineaExterna .iconosTienda img:hover {
@@ -327,14 +330,14 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         gap: 1%;
-        padding-top: 50px;
-        margin-bottom: 50px; }
+        padding-top: 50px; }
         .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd {
           padding-top: 5%;
           font-size: 2rem; }
           .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .nombreProducto {
             opacity: 80%;
-            margin-bottom: 0%; }
+            margin-bottom: 0%;
+            cursor: pointer; }
             .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .nombreProducto:hover {
               opacity: 100%;
               color: #1b644e;
@@ -343,10 +346,13 @@ footer {
             color: #1b644e;
             font-size: 20px; }
             .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .desde span {
-              font-weight: bold; }
+              font-weight: bold;
+              cursor: pointer; }
           .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd p {
             text-align: center; }
           .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .imgProducto {
+            width: auto;
+            height: auto;
             opacity: 95%;
             box-shadow: 3px 3px 5px 0px; }
             .contenedorGridProductos section .sectionProductos .lineaExterna .productosTienda .imagenProd .imgProducto:hover {
@@ -527,19 +533,26 @@ footer {
         flex-direction: column;
         align-items: center; }
         .contenedorGridContacto main form .formulario div {
+          display: flex;
+          flex-direction: column;
           margin-bottom: 20px; }
           .contenedorGridContacto main form .formulario div label {
+            text-align: center;
             font-size: 16px;
             font-weight: 900;
             color: #1b644e; }
-          .contenedorGridContacto main form .formulario div .typeRadio {
-            margin-top: 10px; }
           .contenedorGridContacto main form .formulario div .submit {
             width: 100px;
             margin-bottom: 20px;
             box-shadow: 1px 1px 2px 0px #020202; }
           .contenedorGridContacto main form .formulario div input {
-            width: 58%; }
+            text-align: center; }
+          .contenedorGridContacto main form .formulario div .typeRadioDiv {
+            display: flex;
+            flex-direction: row;
+            gap: 2%; }
+          .contenedorGridContacto main form .formulario div .typeRadio {
+            margin-top: 3%; }
   .contenedorGridContacto footer .footerDiv {
     display: flex;
     display: row;

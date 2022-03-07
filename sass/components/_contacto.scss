@@ -44,14 +44,14 @@
                 flex-direction: column;
                 align-items: center;
                 div{
+                    display: flex;
+                    flex-direction: column;
                     margin-bottom: 20px;
                     label{
+                        text-align: center;
                         font-size: 16px;
                         font-weight: 900;
                         color: $color-vino-letras;
-                    }
-                    .typeRadio{
-                        margin-top: 10px;
                     }
                     .submit{
                         width: 100px;
@@ -59,7 +59,16 @@
                         box-shadow: 1px 1px 2px 0px rgb(2, 2, 2);
                     }
                     input{
-                        width: 58%;
+                        text-align: center;
+                    }
+                    .typeRadioDiv{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 2%;
+                    }
+                    .typeRadio{
+                        margin-top: 3%;
+                        
                     }
                 }
             }

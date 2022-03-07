@@ -63,13 +63,15 @@
                 width: auto;
                 height: auto;
                 border: 1px solid rgb(63, 63, 63);
-                margin: 5px 10px 5px 10px;
+                margin: 5px 10px 60px 10px;
                 // Iconos para desplazarse a zonas detalladas
                 .iconosTienda{
                     display: flex;
                     justify-content: space-evenly;
                     padding-top: 10px;
                     img{
+                        width: auto;
+                        height: auto;
                         border: map-get($map: $botonVioleta, $key:border-botonVioleta);
                         box-shadow: map-get($map: $botonVioleta, $key:box-shadow-botonVioleta);
                         &:hover{
@@ -85,13 +87,14 @@
                     flex-wrap: wrap;  
                     gap: 1%;
                     padding-top: 50px;
-                    margin-bottom: 50px;
+                    
                     .imagenProd{
                         padding-top: 5%;
                         font-size: 2rem;
                         .nombreProducto{
                             opacity: 80%;
                             margin-bottom: 0%;
+                            cursor: pointer;
                             &:hover{
                                 opacity: 100%;
                                 color: $color-vino-letras;
@@ -103,12 +106,15 @@
                             font-size: 20px;
                             span{
                                 font-weight: bold;
+                                cursor: pointer;
                             }
                         }
                         p{
                             text-align: center;
                         }
                         .imgProducto{
+                            width: auto;
+                            height: auto;
                             opacity: 95%;
                             box-shadow: 3px 3px 5px 0px;
                             &:hover{

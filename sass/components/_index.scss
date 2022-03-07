@@ -52,7 +52,6 @@
                 .parrafoSection{
                     display: flex;
                     justify-content: center;
-                    
                     p{
                         width: 88%;
                         font-size: $tamaño-letra-principal - 53px;
@@ -74,6 +73,7 @@
                             padding-left: 15%;
                             img {
                                 width: 70%;
+                                height: auto;
                                 border: 1px solid $color-vino-letras;
                                 &:hover{
                                     transform: scale(1.1);
