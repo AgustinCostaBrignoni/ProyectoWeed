@@ -1,0 +1,100 @@
+@import "../base/variables";
+header{
+    grid-area: header;
+    // Menú general para desktop y pantallas grandes en general
+    .navegacion{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-around;
+        background-color: $color-menu-fondo;
+        z-index: 1;
+        box-shadow: 5px 1px 3px 1px black;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1%;
+            list-style: none;
+            width: 500px;
+        }
+        h2{
+            display: flex;
+            align-items: center;
+            text-decoration-style: none;
+            color: $color-menu-letras;
+            font-size: 59px;
+        }
+        .menu{
+            li{
+                position: relative;
+                font-weight: 400;
+                margin: 1%;
+                &:hover {
+                    color: $color-menu-fondo;
+                }
+            }
+            
+            a {
+                justify-content: space-around;
+                color: $color-menu-letras;
+                font-size: 25px;
+                text-decoration: none;
+                transition: 0.4s;
+                border-radius: 2px 2px 2px 2px;
+                &:hover {
+                    background-color: $color-menu-letras;
+                    color: $color-menu-fondo;
+                    transition: 0.1s;
+                } 
+            }
+
+            ul{
+                position: absolute;
+                display: flex;
+                max-width: 120%;
+                max-height: 250%;
+                flex-direction: column;
+                border-radius: 5px;
+                display: none;
+                &:hover{
+                    background-color: $color-menu-letras;
+                    display: block;
+                    display: flex;
+                    align-items: start; 
+                }
+            }
+
+            li:hover ul {
+                background-color: $color-menu-letras;
+                display: block;
+                display: flex;
+                align-items: start;
+            }
+            
+            .subMenu{
+                border: 1px solid $color-menu-fondo;
+                a {
+                    border: none;
+                    color: $color-menu-fondo;
+                    font-size: 19px;
+                    &:hover{
+                        background-color: $color-menu-fondo;
+                        color: $color-menu-letras;
+                    }
+                    
+                }
+            }
+        }
+        // Imagen Carrito de los diferentes menúes
+        .imgCarrito {
+            width: 30%;
+            padding-top: 10%;
+        }
+        
+        .imgCarrito:hover {
+            transform: scale(1.2);
+            transition: transform 0.2s;
+        }
+    }
+
+}

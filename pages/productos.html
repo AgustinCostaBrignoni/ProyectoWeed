@@ -5,194 +5,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina de productos a base de marihuana, nuestra pagina de productos, te mostramos todo lo que ofrecemos a la venta.">
+    <meta name="keywords" content="marihuana, weed, productos, aceites, semillas, cogollo, medicinal, compras">
+    <!-- Link del css y javascript bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Link de nuestro css -->
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del texto Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Inicio-WeedKings</title>
 </head>
-
-<body>
-    <div class="contenedorGridProductos">
-        <header>
-            <div class="tituloResponsive">
-                <div class="titUno">
-                    <h1><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></>
-                </div>
-                <div class="titDos">
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
-                </div>
+<!-- Etiqueta grid contenedora -->
+<body class="contenedorGridProductos">
+    <header>
+        <!-- Titulo responsive para pantallas pequeñas -->
+        <div class="tituloResponsive">
+            <div class="titUno">
+                <h1><a href="../index.html" style='text-decoration:none;color:#E5E3C9;'> WeedKings </a></h1>
             </div>
-            <!-- MENU DESPLEGABLE -->
-            <div class="desplegable">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                    <!-- <h5 class="text-white h4">Collapsed content</h5>
-                    <span class="text-muted">Toggleable via the navbar brand.</span> -->
-                    <ul class="menu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                    </div>
-                </div>
-                <nav class="navbar navbar-dark bg-dark">
-                    <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    </div>
-                </nav>
-            </div> 
-            <nav class="navegacion">
-                <h2><a href="../index.html" style='text-decoration:none;color:#762F58;'> WeedKings </a></h2>
+            <div class="titDos">
+                <a href="../pages/productos.html">
+                    <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
+            </div>
+        </div>
+        <!-- Menú desplegable para celulares y tablets -->
+        <div class="desplegable">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
                 <ul class="menu">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../pages/nosotros.html">Nosotros</a></li>
                     <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
-                        <ul class="subMenu">
-                            <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
-                            <li><a href="../pages/comunidad.html#informacion">Información</a></li>
-                            <li><a href="../pages/comunidad.html#videos">Videos</a></li>
-                        </ul>
-                    </li>
+                    <li><a id="activador" href="../pages/comunidad.html">Comunidad</a></li>
                     <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
-                <div>
-                    <a href="../pages/productos.html">
-                        <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 </div>
             </nav>
-        </header>
-
-        <main>
-            <div class="sectionProd">
-                <div class="parrafoSectionProd">
-                    <p>Aquí te mostramos algunos de nuestros productos, fabricados con la más alta calidad del mercado. </p>
-                </div>
-                <div class="recuadroBlanco">
-
-                    <div class="envioSeguridad">
-                        <img class="imagenRecuadro" src="../images/iconoEnvio.png" alt="">
-                        <p>ENVÍO RÁPIDO Y GRATUITO</p>
-                        <img class="imagenRecuadro" src="../images/iconoCalidad.png" alt="">
-                        <p>CALIDAD MÁXIMA</p>
-                        <img class="imagenRecuadro" src="../images/iconoSeguridad.png" alt="">
-                        <p>GARANTÍA DE ENTREGA</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <section>
-            <div class="sectionProductos">
-                <div class="lineaExterna">
-                    <div>
-                        <div class="iconosTienda">
-                            <a href="#pieProd1"><img src="../images/iconoCannabis.png" alt=""></a>
-                            <a href="#pieProd2"><img src="../images/iconoAceites.png" alt=""></a>
-                            <a href="#pieProd3"><img src="../images/iconoSemilla.png" alt=""></a>
-                    </div>
-                    <div class="productosTienda" id="pieProd1">
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdUno">      
-                        </div>
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdDos"> 
-                        </div>
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdTres">
-                        </div>    
-                    </div>
-                    <div class="productosTienda" id="pieProd2">
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdUno">      
-                        </div>
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdDos"> 
-                        </div>
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdTres">
-                        </div>    
-                    </div>
-                    <div class="productosTienda" id="pieProd3">
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdUno">      
-                        </div>
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdDos"> 
-                        </div>
-                        <div class="imagenProd"><img class="imgProducto" src="../images/justherb.png" alt=""><p>Nombre del Producto</p><p>500US$</p><img class="imgAgregarCarrito" src="../images/carrito.png" alt="carrito"><p class="addCarro">Ir al carrito</p></div>
-                        <div class="recuadroImagenProd recuadroImagenProdTres">
-                        </div>    
-                    </div>
-                </div>
-            </div>
-        </section>
-                
-
-                
-            
-
-
-        <footer>
+        </div> 
+        <!-- Menú general para desktop y pantallas grandes en general -->
+        <nav class="navegacion">
+            <h2><a href="../index.html" style='text-decoration:none;color:#E5E3C9;'> WeedKings </a></h2>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a id="activador" href="../pages/comunidad.html">Comunidad</a>
+                    <ul class="subMenu">
+                        <li><a href="../pages/comunidad.html#noticias">Noticias</a></li>
+                        <li><a href="../pages/comunidad.html#informacion">Información</a></li>
+                        <li><a href="../pages/comunidad.html#videos">Videos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
             <div>
-                <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
+                <a href="../pages/productos.html">
+                    <img class="imgCarrito" src="../images/carrito.png" alt="CarritoDeCompras" title="Ir al carrito"></a>
             </div>
-            <div class="socios">
+        </nav>
+    </header>
+
+    <main>
+        <!-- Resumen de la página Productos -->
+        <div class="sectionProd">
+            <div class="parrafoSectionProd">
+                <p>Aquí te mostramos algunos de nuestros productos, fabricados con la más alta calidad del mercado. </p>
+            </div>
+            <!-- Recuadro con iconos sobre seguridad, calidad y envío -->
+            <div class="recuadroBlanco">
+                <div class="envioSeguridad">
+                    <img class="imagenRecuadro" src="../images/iconoEnvio.png" alt="iconoEnvio">
+                    <p>ENVÍO RÁPIDO</p>
+                    <img class="imagenRecuadro" src="../images/iconoCalidad.png" alt="iconoCalidad">
+                    <p>CALIDAD</p>
+                    <img class="imagenRecuadro" src="../images/iconoSeguridad.png" alt="iconoSeguridad">
+                    <p>GARANTÍA</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <!-- Sección de productos -->
+        <div class="sectionProductos">
+            <div class="lineaExterna">
+                <!-- Iconos para desplazarse a zonas detalladas -->
                 <div>
-                    <h5>Socios principales:</h5>
+                    <div class="iconosTienda">
+                        <a href="#pieProd1"><img src="../images/iconoCannabis.png" alt="iconoCannabis"></a>
+                        <a href="#pieProd2"><img src="../images/iconoAceites.png" alt="iconoAceites"></a>
+                        <a href="#pieProd3"><img src="../images/iconoSemilla.png" alt="iconoSemilla"></a>
                 </div>
-                <div class="imagesSocios">
-                    <img src="../images/logo1.png" alt="">
-                    <img src="../images/logo2.png" alt="">
-                    <img src="../images/logo3.png" alt="">
-                    <img src="../images/logo4.png" alt="">
-                </div>   
-            </div>
-            <div class="footerDivIndex">
-                <div class="logosRedes">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../images/Facebook.png"
-                            alt="Facebook"></a>
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/instagram.png"
-                            alt="Instagram"></a>
-                </div>
-                <div class="logosRedesResponsive">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../images/FacebookResp.png"
-                            alt="Facebook"></a>
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/InstagramResp.png"
-                            alt="Instagram"></a>
-                    <a href="https://api.whatsapp.com/send?phone=+59895408091" target="_blank"><img src="../images/whatsapp.png"
-                            alt="Wathsapp"></a>
-                </div>
-                <div class="logosRedesResponsiveDesktop">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../images/FacebookResp.png"
-                            alt="Facebook"></a>
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/InstagramResp.png"
-                            alt="Instagram"></a>
-                </div>
-                <div class="derechos">
-                    <div class="footContact">
-                        <a href="../pages/contacto.html" style='text-decoration:none;color:#ffffff;'>Contacto</a>
+                <!-- Productos de la tienda: nombre, costo, etc -->
+                <div class="productosTienda" id="pieProd1">
+                    <div class="imagenProd"><img class="imgProducto" src="../images/Rudelaris.png" alt="imagenProducto"><p class="nombreProducto">Variedad Rudelaris</p><p class="desde">Desde <span>14 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>
+                    <div class="recuadroImagenProd recuadroImagenProdUno">      
                     </div>
-                    <h6>
-                        © 2022 WeedKings | IndiNati S.A | Todos los derechos reservados | Canelones Uruguay - CP90000
-                    </h6>
-                    <h6>
-                        No vendemos semillas de marihuana a nadie que nos haga pensar que pueden ser cultivadas en
-                        países donde no es legal.
-                        Síguenos en redes sociales para saber en qué países está legalizado el cannabis.
-                    </h6>
+                    <div class="imagenProd"><img class="imgProducto" src="../images/sativa.png" alt="imagenProducto"><p class="nombreProducto">Variedad Sativa</p><p class="desde">Desde <span>16 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>
+                    <div class="recuadroImagenProd recuadroImagenProdDos"> 
+                    </div>
+                    <div class="imagenProd"><img class="imgProducto" src="../images/indica.png" alt="imagenProducto"><p class="nombreProducto">Variedad Indica</p><p class="desde">Desde <span>12 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>  
+                </div>
+                <div class="productosTienda" id="pieProd2">
+                    <div class="imagenProd"><img class="imgProducto" src="../images/aceiteUno.png" alt="imagenProducto"><p class="nombreProducto">Aceites Corporales</p><p class="desde">Desde <span>30 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>
+                    <div class="recuadroImagenProd recuadroImagenProdUno">      
+                    </div>
+                    <div class="imagenProd"><img class="imgProducto" src="../images/aceiteDos.png" alt="imagenProducto"><p class="nombreProducto">Aceites Consumibles</p><p class="desde">Desde <span>36 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>
+                    <div class="recuadroImagenProd recuadroImagenProdDos"> 
+                    </div>
+                    <div class="imagenProd"><img class="imgProducto" src="../images/aceiteTres.png" alt="imagenProducto"><p class="nombreProducto">Aceites Edición Especial</p><p class="desde">Desde <span>70 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>  
+                </div>
+                <div class="productosTienda" id="pieProd3">
+                    <div class="imagenProd"><img class="imgProducto" src="../images/semillasUno.png" alt="imagenProducto"><p class="nombreProducto">Semillas Autoflorecentes</p><p class="desde">Desde <span>10 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>
+                    <div class="recuadroImagenProd recuadroImagenProdUno">      
+                    </div>
+                    <div class="imagenProd"><img class="imgProducto" src="../images/semillasDos.png" alt="imagenProducto"><p class="nombreProducto">Semillas Cultivo Exterior</p><p class="desde">Desde <span>12 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>
+                    <div class="recuadroImagenProd recuadroImagenProdDos"> 
+                    </div>
+                    <div class="imagenProd"><img class="imgProducto" src="../images/semillasTres.png" alt="imagenProducto"><p class="nombreProducto">Semillas Cultivo Interior</p><p class="desde">Desde <span>14 US$</span></p><img class="imgAgregarCarrito" src="../images/carritoDos.png" alt="carrito"><a href="" class="addCarro">+ Agregar al carrito</a></div>  
                 </div>
             </div>
+        </div>
+    </section>
 
-        </footer>
-    </div>    
+    <footer>
+        <!-- Icono de wathsapp con posicion FIXED -->
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=+59895408091" class="btn-wsp" target="_blank"></a>
+        </div>
+        <!-- Apartado de socios principales -->
+        <div class="socios">
+            <div>
+                <h6>Socios principales:</h6>
+            </div>
+            <div class="imagesSocios">
+                <img src="../images/logo1.png" alt="logo1">
+                <img src="../images/logo2.png" alt="logo2">
+                <img src="../images/logo3.png" alt="logo3">
+                <img src="../images/logo4.png" alt="logo4">
+            </div>  
+        </div>
+        <!-- apartado para los logos de redes sociales -->
+        <div class="footerDivIndex">
+            <div class="logosRedes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/Facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/instagram.png"
+                        alt="Instagram"></a>
+            </div>
+            <div class="logosRedesResponsive">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/FacebookResp.png"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/InstagramResp.png"
+                        alt="Instagram"></a>
+                <a href="https://api.whatsapp.com/send?phone=+59895408091" target="_blank"><img src="../images/whatsapp.png"
+                        alt="Wathsapp"></a>
+            </div>
+            <div class="logosRedesResponsiveDesktop">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/FacebookResp.png"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../images/InstagramResp.png"
+                        alt="Instagram"></a>
+            </div>
+            <div class="derechos">
+                <div class="footContact">
+                    <a href="../pages/contacto.html" style='text-decoration:none;color:#ffffff;'>Contacto</a>
+                </div>
+                <h6>
+                    © 2022 WeedKings | IndiNati S.A | Todos los derechos reservados | Canelones Uruguay - CP90000
+                </h6>
+                <h6>
+                    No vendemos semillas de marihuana a nadie que nos haga pensar que pueden ser cultivadas en
+                    países donde no es legal.
+                    Síguenos en redes sociales para saber en qué países está legalizado el cannabis.
+                </h6>
+            </div>
+        </div>
+
+    </footer>
 </body>
-
 </html>

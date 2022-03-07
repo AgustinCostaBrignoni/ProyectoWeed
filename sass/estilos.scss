@@ -1,0 +1,25 @@
+// Reseteo de parámetros estándares
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+/*Variables*/
+@import "base/operaciones";
+@import "base/variables";
+@import "base/mapas";
+@import "base/extends";
+@import "base/mixin";
+// Estilos generales
+@import "components/header";
+@import "components/footer";
+@import "components/index";
+@import "components/nosotros";
+@import "components/productos";
+@import "components/comunidad";
+@import "components/contacto";
+/*MediaQueries*/
+@import "base/mediaqueries";

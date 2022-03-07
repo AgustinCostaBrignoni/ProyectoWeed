@@ -1,0 +1,195 @@
+@import "../base/variables";
+@import "../base/operaciones";
+
+// PAGINA COMUNIDAD
+.contenedorGridComunidad{
+    @extend %contenedorGridGeneral;
+    grid-template-areas: "header"
+                         "main"
+                         "section"
+                         "footer";
+    main{
+        // Bloque con bienvenidas
+        .sectionProd{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+            .parrafoSectionComu {
+                width: 90%;
+                font-size: $tamaño-letra-principal - 59px;
+                margin: 30px 50px;
+                text-shadow: 0px 20px 10px 10px black;
+                p{
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        color: $color-vino-letras;
+                        display: inline-block;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            width: 60%;
+                            height: 3px;
+                            background-color: $color-vino-letras;
+                            position: absolute;
+                            top: 15%;
+                            left: 62%;
+                            transform: translateX(-100%);
+                            transition: 0.5s all;
+                        }
+                        &::after{
+                            content: "";
+                            width: 60%;
+                            height: 3px;
+                            background-color: $color-menu-fondo;
+                            position: absolute;
+                            bottom: 12%;
+                            left: 96%;
+                            transform: translateX(-100%);
+                            transition: 0.8s all;
+                        }
+                        &:hover::after{
+                            width: 95%;
+                        }
+                        &:hover:before{
+                            width: 0%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    section{
+        grid-area: section;
+        // Seccion Noticias
+        .tituloSeccion{
+            .franjaUno{
+                width: 60%;
+                align-content: center;
+                height: 5px;
+                background-color: $color-menu-fondo;
+            }
+            h3{
+                font-weight: 400;
+                margin: 0%;
+                font-size: 43px;
+                text-align: center;
+                color: $color-vino-letras;
+            }
+            .franjaDos{
+                width: 60%;
+                position: relative;
+                transform: translateX(66%);
+                height: 5px;
+                bottom: -10%;
+                background-color: $color-menu-fondo;
+            }
+            h5{
+                font-weight: 400;
+                margin: 0%;
+                font-size: 43px;
+                text-align: center;
+                color: $color-vino-letras;
+            }
+            .cannabisExporta{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 100%;
+                padding-top: 50px;
+                img{
+                    width: 20rem;
+                    height: 15rem;
+                    padding-left: 0%;
+                    padding-bottom: 0%;
+                    margin-left: 5%;
+                    border: 1px solid $color-vino-letras;
+                    
+                }
+                .textoNoticia{
+                    h4{
+                        color: $color-menu-fondo;
+                        font-size: 160%;
+                        text-decoration-line: underline;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                        padding: 10px 30px 0px 30px;
+                        font-size: 100%;
+                    }
+                }
+                
+            
+            }
+
+            // Seccion Información
+            #informacion{
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+            .tabla{
+                display: flex;
+                justify-content: start;
+                gap: 15px;
+                h5{
+                    font-weight: 400;
+                    margin: 0%;
+                    font-size: 43px;
+                    text-align: center;
+                    color: $color-vino-letras;
+                }
+                p{
+                    padding-top: 20px;
+                    align-self: center;
+                    text-align: center;
+                }
+                table{
+                    background-color: white;
+                    border-color: $color-vino-letras;
+                    margin: 1%;
+                    tr{
+                        .colorCuadroTabla{
+                            background-color: $color-vino-letras;
+                            font-style: italic;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            // Seccion Videos
+            
+            .videoTexto{
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                div{
+                    h6{
+                        font-weight: 400;
+                        font-size: 25px;
+                        flex-wrap: wrap;
+                        text-align: center;
+                    }
+                    iframe{
+                        border: 1px solid $color-vino-letras;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+            
+            
+            
+                
+        
